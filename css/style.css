@@ -588,7 +588,7 @@ a{
     background-repeat: repeat;
     background-size: cover;
     height: 400px;
-    grid-area: header;
+    grid-area:header;
 
 }
 form{
