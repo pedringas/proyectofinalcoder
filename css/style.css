@@ -15,16 +15,6 @@
     "footer footer footer";
 
 }
-.container__grid__galeria{
-    display: grid;
-    grid-template-columns: repeat(1fr 1fr 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-areas: 
-    "header header header"
-    "galeria galeria galeria"
-    "footer footer footer";
-
-}
 
 @media (max-width: 450px){
     header{
@@ -53,7 +43,7 @@
     .producto-index{
         margin-top: 2rem;
     }
-    .manifiesto__img1 img{ 
+    .manifiesto__img2, .manifiesto__img1 img{ 
         display: none;
     }
     .galeria__{
@@ -91,6 +81,9 @@
         height: auto;
     }
     .manifiesto__img1 img{ 
+        display: none;
+    }
+    .manifiesto__img2 img{
         display: none;
     }
     .img__quienes{
@@ -380,7 +373,7 @@ a{
     grid-area: producto;
     justify-content: center;
     margin-top: 3rem;
-    
+    padding: 1rem;
 }
 .galeria__imagenes{
     display: flex;
@@ -412,7 +405,8 @@ a{
 .galeria__video iframe{
     display: flex;
     padding:3rem;
-    grid-area: quienes;
+    width: auto;
+    height: auto;
 }
 
 
@@ -529,20 +523,19 @@ a{
 
 /*manifiesto*/
 .header-manifiesto{
-    background-image: url(../img/pexels-francesco-ungaro-1671324.jpg);
-    background-position-y: center;
-    height: 400px;
+    background-image: url(../img/pexels-francesco-ungaro-1671324.jpg); 
     grid-area: header;
+    background-position:center;
+    height: 400px;
+} 
+    
         
-}  
 .manifiesto{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
-    grid-area: producto;  
+    background-position: 4rem;
+    background-repeat: no-repeat;
+    height:auto;
+    width:auto;
+    padding: 10px;
     
 
 }
@@ -550,6 +543,7 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 2rem;
     
 
 }
@@ -559,25 +553,22 @@ a{
     width: 800px;
     text-align: justify;
     color: white;
-    margin-left: 5rem;
+    margin: 0 5rem 0 5rem;
     
 }
 .manifiesto__img1{
     display: flex;
     flex-direction: row;
     margin-left: 6rem;
-    margin-top: -1rem;
     grid-area: galeria;
     
     
 }
     
-.manifiesto__img2{
-    display: flex;
-    flex-direction: row;
+.manifiesto__img2 img{
     margin-left: 4rem;
-    
-   
+    width: 450px;
+    height: 100px;
 }
 
 
@@ -631,14 +622,12 @@ input[type=submit]:hover {
 .container {
     display: flex;
     flex-direction: row;
-    grid-area: producto;
+    flex-wrap: wrap;
     justify-content: center;
-
-    
+    height: auto;
+    width: auto;
 }
 .formulario{
-    display: flex;
-    flex-direction: column;
     border-radius: 5px;
     background-color: transparent;
     padding: 2px;
@@ -737,7 +726,7 @@ i:after {
 	right: 1rem;
 }
 
-/* I haven't found a way for IE and Edge to let me style inputs that way */
+
 i input{
 	appearance: none;
 	-ms-appearance: none;
