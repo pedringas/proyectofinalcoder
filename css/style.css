@@ -377,14 +377,16 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    grid-area: galeria;
+    grid-area: producto;
     justify-content: center;
+    margin-top: 3rem;
     
 }
 .galeria__imagenes{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
 }
 
 .galeria__img1 img{
@@ -702,7 +704,7 @@ i:after {
 	right: 1rem;
 }
 
-/* I haven't found a way for IE and Edge to let me style inputs that way */
+
 i {
 	position: relative;
 	display: block;
