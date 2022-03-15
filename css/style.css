@@ -13,6 +13,12 @@
 .navbarcolor{
     color: white;
 }
+.navbar-toggler{
+    background-color: #FCB631;
+}
+.navbar-toggler-icon{
+    color: black;
+}
 
 .card{
     background-color: #21412E;
