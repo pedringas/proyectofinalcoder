@@ -11,80 +11,90 @@
     <link rel="stylesheet" href="../css/fonts.css">
   
 </head>
-
 <body>
-   <!---menu de navegacion-->
-    <header class="header-manifiesto">
-        <div class="header-productos_div">
-            <div class="logo__header">
-                <a href="../index.html">
+    <!---menu de navegacion-->
+    <header style="background-image:url(/img/pexels-francesco-ungaro-1671324.jpg); height: 400px; background-size: cover; background-position-y: center;">
+        <nav class="navbar navbar-expand-lg navbarcolor container ">
+            <div class="container-fluid">
+                <a class="navbar-brand navbarcolor" href="../index.html">
                     <img src="../img/1-11.png" width="100" height="100" alt="LOGO" >
                 </a>
-            </div>    
-            <nav class="header__nav">
-                <ul class="header__element">
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="../pages/manifiesto.html">MANIFIESTO</a></li>
-                    <li><a href="../pages/productos.html">PRODUCTOS</a></li>
-                    <li><a href="../pages/galeria-de-imagenes.html">GALERIA</a></li>
-                    <li><a href="../pages/contacto.html">CONTACTO</a></li>
-                    </ul>
-            </nav>
-        </div>
+                <section>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse align-middle" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link navbarcolor active" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navbarcolor" href="../pages/manifiesto.html">MANIFIESTO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navbarcolor" href="../pages/productos.html">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navbarcolor" href="../pages/galeria-de-imagenes.html">GALERIA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navbarcolor" href="../pages/contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </section>    
+                </div>
+            </div>
+        </nav>
         <div class="titulo__producto">
             <h1>MANIFIESTO</h1>
         </div>
-    </header>
-    <!---texto e imagenes-->
-    <main class="manifiesto">
-        <section class="manifiesto__2">
-            <div  class="manifiesto__texto">
-                NNabis es un espacio para escapar de lo cotidiano y la agobiante
-                rutina que nos propone la vida moderna de hoy en dia. <br> Poder reconectar
-                con nuestro propio ser a través de los alimentos, medicinas que
-                consumimos y la naturaleza que nos rodea y provee; nos permite encontrar
-                la FELICIDAD a través del aprendizaje continuo. <br>
-                La vida en las grandes ciudades que nos sucumben al caos de estar superadas en su
-                capacidad de gestion y descubrimiento, nos invitan a iniciar nuevo rumbo e intentar dejar
-                de lado todo aquello superfluo para concentrarnos en lo que realmente nos importa: encontrar el
-                equilibrio cuerpo, mente y espíritu.
-            </div>
-            <div class="manifiesto__img1">
+    </header>    
+
+    <main class="container">
+        <section class="manifiesto__2 row">
+                <div  class="manifiesto__texto row1 col-lg-8 col-md-6">
+                    NNabis es un espacio para escapar de lo cotidiano y la agobiante
+                    rutina que nos propone la vida moderna de hoy en dia. <br> Poder reconectar
+                    con nuestro propio ser a través de los alimentos, medicinas que
+                    consumimos y la naturaleza que nos rodea y provee; nos  permite encontrar
+                    la FELICIDAD a través del aprendizaje continuo. <br>
+                    La vida en las grandes ciudades que nos sucumben al caos de estar superadas en su
+                    capacidad de gestion y descubrimiento, nos invitan a iniciar nuevo rumbo e intentar dejar
+                    de lado todo aquello superfluo para concentrarnos en lo que realmente nos importa: encontrar el
+                    equilibrio cuerpo, mente y espíritu.
+                </div>
+            <div class="manifiesto__img1 row2 col-lg-4 col-md-4">
                 <img src="../img/Grupo 1575.png" alt="2 elementos">
             </div>
         </section>
-    </main>
-    <section>
-        <div  class="manifiesto__img2">
-            <img src="../img/4 elementos.png" alt="4 elementos">
-            <img src="../img/4 elementos.png" alt="4 elementos">
-        </div>
-    </section>
-        
-    <footer class="footer">
-        <div class="img_f">
-            <a href="#">
-                <img src="../img/1-11.png"> 
-             </a>
-        </div>
-        <div class="titulo-f footer__f">
-                <h2>LO NATURAL, LA ESCENCIA y EL EQULIBRIO</h2>
-        </div>
-        <div class="footer__f">          
-            <ul class="datos-f">
-                <li>
-                    <h2>CONTACTANOS:</h2>
-                </li>
-                <ul> 
-                    <li style="display: block;">Email:nnabis@nnabis.net</li>
-                    <li style="display: block;">Whatsapp: 3515644180</li>
-                    <li style="display: block;">Instragram: nnabiscomunidad</li>
+    </main>   
+    <footer class="footer container">
+        <section class="row">    
+            <div class="img_f row1 col-lg-4 col-sm-4 col-md-4 col-xs-12 footer__f">
+                <a href="#" >
+                    <img src="../img/1-11.png"> 
+                </a>
+            </div>
+            <div class="titulo-f footer__f row2 col-lg-4 col-sm-4 col-md-4 col-xs-12">
+                    <h2>LO NATURAL, LA ESCENCIA y EL EQULIBRIO</h2>
+            </div>
+            <div class="footer__f row3 col-lg-4 col-sm-4 col-md-4 col-xs-12">          
+                <ul class="datos-f">
+                    <li>
+                        <h2>CONTACTANOS:</h2>
+                    </li>
+                    <ul> 
+                        <li style="display: block;">Email:nnabis@nnabis.net</li>
+                        <li style="display: block;">Whatsapp: 3515644180</li>
+                        <li style="display: block;">Instragram: nnabiscomunidad</li>
+                    </ul>
                 </ul>
-            </ul>
-                    
-        </div>
+                        
+            </div>
+        </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
+
