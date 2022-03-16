@@ -8,6 +8,56 @@
         display: none;
     }
 }
+.hero-image-galeria{
+    background: url(../img/portada\ galeria.jpg) no-repeat center; 
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.hero-image-index{
+    background: url(../img/Grupo\ 17492.png) no-repeat center; 
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.hero-image-manifiesto{
+    background: url(../img/pexels-francesco-ungaro-1671324.jpg) no-repeat center; 
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.hero-image-contacto{
+    background: url(../img/Grupo\ 1750.png) no-repeat center; 
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.hero-image-productos{
+    background: url(../img/Componente\ 34\ –\ 1.png) no-repeat center; 
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.hero-text {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.hero-text-boton {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
 
 
 .navbarcolor{
@@ -16,13 +66,22 @@
 .navbar-toggler{
     background-color: #FCB631;
 }
+
 .navbar-toggler-icon{
-    color: black;
+    background-image: url(../img/menu.png);
+}
+
+.nav-link:hover{
+    color: #FCB631;
 }
 
 .card{
     background-color: #21412E;
 
+}
+
+.carousel-indicators{
+    margin-left: 0px;
 }
 p{
     color: white;
@@ -40,10 +99,12 @@ h1{
     font-family: monument;
     text-align: center;
     color: white;
+    font-size: 35px;
 }
 h2{
     color: #d4ddd8;
     font-family: carentro;
+    font-size: 40px;
 }
 
 
@@ -73,7 +134,7 @@ a{
 
 .button-index a{
     padding: 15px;
-    margin-bottom: 40px;
+    margin-top: 30px;
     font-weight: bolder;
     transition: all 0.5s;
     background-color: #21412E;
@@ -139,7 +200,7 @@ a{
     margin-top: 2rem;    
     color: #21412E;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 2rem;
     
 }
@@ -251,8 +312,7 @@ a{
     height: 280px;
 }
 .contenedor__galeria{
-    grid-area: galeria;
-    background-image: url(../img/galeria-img.png);
+    background-image: url(../img/portada\ galeria.jpg);
     width: auto;
     background-size: cover;
     display: flex;
@@ -274,6 +334,8 @@ a{
 .galeria__{
     margin-top: 3rem;
     padding: 1rem;
+    display: flex;
+    justify-content: center;
 }
 .galeria__imagenes{
     display: flex;
@@ -307,13 +369,12 @@ a{
 
 /*quienes somos/contacto*/
 .columnas__quienes{
-    grid-area: quienes;
     width: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center ;
+    justify-content: center;
+    align-items: center;
     margin-top: 100px;
     margin-bottom: 100px;
    
@@ -349,6 +410,7 @@ a{
 .img__quienes img{
     width: 400px;
     height: 300px;
+    margin-left: 2rem;
 }
 .boton__quienes a{
     display: flex;
