@@ -8,6 +8,16 @@
         display: none;
     }
 }
+.offcanvas{
+    background-color: #21412E;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #d4ddd8;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #FCB631;
+}
 .hero-image-galeria{
     background: url(../img/portada\ galeria.jpg) no-repeat center; 
     background-size: cover;
