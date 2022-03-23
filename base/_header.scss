@@ -1,19 +1,22 @@
+@import "../base/variables";
+
+
 header{
     .navbar-light .navbar-nav .nav-link{
-        color: #d4ddd8;
+    color: $nnabis3;
         &:hover{
-            color: #FCB631;
+            color: $nnabis2;
         }
         
         
 
     }
     .offcanvas{
-        background-color: #21412E;
+        background-color: $nnabis1;
 
     }
     .navbar-toggler{
-        background-color: #FCB631;
+        background-color: $nnabis2;
 
 
     }
