@@ -1,5 +1,6 @@
+@import "../base/variables";
 body{
-    background-color: #21412E;
+    background-color: $nnabis1;
     font-family: axiforma;
     h1{
         font-family: monument;
@@ -11,7 +12,7 @@ body{
 
 body{
     h2{
-        color: #d4ddd8;
+        color: $nnabis3;
         font-family: carentro;
         font-size: 40px;
         
@@ -20,13 +21,13 @@ body{
 body{
     a{
         text-decoration: none;
-        color:#21412E;
+        color:$nnabis1;
        
     }
 }
 body{
     p{
-        color: white;
+        color: $nnabis3;
 
     }
 }

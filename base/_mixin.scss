@@ -1,0 +1,5 @@
+@mixin margenesfooter ($margen-arriba, $margen-abajo) {
+    margin-top: $margen-arriba;
+    margin-bottom: $margen-abajo;
+    
+}

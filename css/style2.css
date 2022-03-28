@@ -1,3 +1,7 @@
+header {
+  background: no-repeat center cover relative;
+  height: 500px;
+}
 header .navbar-light .navbar-nav .nav-link {
   color: #d4ddd8;
 }
@@ -34,25 +38,23 @@ body a {
 }
 
 body p {
-  color: white;
+  color: #d4ddd8;
 }
 
-footer {
-  background-color: #21412E;
+footer div, footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+}
+
+footer {
+  background-color: #21412E;
   margin-top: 6rem;
   margin-bottom: 3rem;
 }
 footer div {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
   justify-content: center;
 }
 footer img {
@@ -98,6 +100,14 @@ main a {
 main a:hover {
   background-color: #FCB631;
   color: #21412E;
+}
+
+footer, footer div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=style2.css.map */

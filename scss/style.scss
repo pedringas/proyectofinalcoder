@@ -1,5 +1,7 @@
-@import "../base/header";
-@import "../base/body";
-@import "../base/footer";
-@import "../base/_mainAbout";
-@import "../base/variables"
+@import "../components/header";
+@import "../components/body";
+@import "../components/footer";
+@import "../components/mainAbout";
+@import "../base/variables";
+@import "../base/extends";
+@import "../base/mixin.scss";

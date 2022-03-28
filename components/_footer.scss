@@ -1,21 +1,14 @@
 @import "../base/variables";
+@import "../base/extends";
+@import "../base/mixin";
 
 
 footer{
+    @extend %disposicionfooter;
     background-color: $nnabis1;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 6rem;
-    margin-bottom: 3rem;
+    @include margenesfooter (6rem, 3rem);
     div{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        align-content: center;
+        @extend %disposicionfooter;
         justify-content: center;
     }
     img{
