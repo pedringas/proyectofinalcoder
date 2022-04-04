@@ -1,0 +1,85 @@
+@import "../base/variables";
+@import "../base/mapa";
+@import "../base/extends";
+
+
+header{
+    background: map-get($header , posicion );
+    height: map-get($header, altura);
+
+}
+.hero-image-index{
+    background: url(../img/Grupo\ 17492.png); 
+    @extend %headernnabis;
+  }
+.hero-image-productos{
+    background: url(../img/Componente\ 34\ –\ 1.png);
+    @extend %headernnabis;
+}
+.hero-image-manifiesto{
+        background: url(../img/pexels-francesco-ungaro-1671324.jpg);
+        @extend %headernnabis;
+    }
+.hero-image-galeria{
+        background: url(../img/portada\ galeria.jpg); 
+        @extend %headernnabis;
+      }
+.hero-image-contacto{
+        background: url(../img/Grupo\ 1750.png); 
+        @extend %headernnabis;
+    }
+.navbar-light .navbar-nav .nav-link{
+    font-size: $fontnnabisT;
+    color: $nnabis3;
+        &:hover{
+            color: $nnabis2;
+        }
+    }
+.offcanvas{
+        background-color: $nnabis1;
+
+    }
+.navbar-toggler{
+        background-color: $nnabis2;
+    }
+.navbar-toggler-icon{
+        background-image: url();
+      }
+.hero-text {
+        @extend %textoheader;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $nnabis3;
+      }
+.hero-text-boton {
+        @extend %textoheader;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $nnabis3;
+    }
+
+.button-index a{
+        padding: 15px;
+        margin-top: $fontnnabisT;
+        font-weight: bolder;
+        transition: all 0.5s;
+        background-color: $nnabis1;
+        font-family: axiforma;
+        border: 2px solid $nnabis2;
+        cursor: pointer;
+        color: $nnabis2;
+        &:hover{
+            background-color: $nnabis2;    
+            color:$nnabis1;
+        }
+            
+    }   
+.hero-text-boton {
+    @extend %textoheader;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $nnabis3;
+      }    

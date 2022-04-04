@@ -1,0 +1,378 @@
+@import "../base/variables";
+@import "../base/extends";
+
+/*about*/
+main{
+    h2{
+        margin: 2rem;
+    }
+    h5{
+        color: $nnabis3;
+      }
+    p{
+        color: $nnabis3;
+    }
+    a{
+        padding: 15px;
+        margin-top: 30px;
+        font-weight: bolder;
+        transition: all 0.5s;
+        background-color: $nnabis1;
+        font-family: axiforma;
+        border: 2px solid $nnabis2;
+        color: $nnabis2;
+        &:hover{
+            background-color: $nnabis2;    
+            color: $nnabis1; 
+        }
+    }
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+/*manifiesto*/
+.manifiesto__2{
+    @extend %columnas;
+    margin-top: 2rem;
+    padding: 1rem;
+    justify-content: space-between;
+  
+  }
+.manifiesto__texto{
+    @extend %columnas;
+    text-align: justify;
+    color: white;
+    
+  }
+  
+.manifiesto__img1{
+    @extend %columnas;
+    justify-content: center;  
+    align-items: center; 
+    
+  }
+    
+.manifiesto__img2 img{
+    margin-left: 4rem;
+    width: 450px;
+    height: 100px;
+  }
+  
+  /*producto*/
+.section-producto{
+    background-position: 4rem;
+    background-color: $nnabis2;
+    background-repeat: no-repeat;
+    height:auto;
+    width:auto;
+    padding: 10px;
+  }
+
+#titulo-producto{
+    display: flex;
+    justify-content:center;
+    margin-top: 2rem;    
+    color: $nnabis1;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    
+  }
+.flex__pr{
+    @extend %columnas;
+    justify-content: space-evenly;
+    
+  }
+.producto-index{
+    @extend %columnas;
+    justify-content: space-evenly;
+    text-decoration: none!important;
+    width: 250px;
+    background-color: $nnabis1;   
+    margin-top: 2rem; 
+  }
+  .card{
+      background-color: $nnabis1;
+  }
+
+  .boton_comprar{
+    margin:2rem 0px;
+    cursor: pointer;
+  }
+  .boton_comprar a{
+    text-decoration: none;
+    text-align: center;
+    background-color: $nnabis1;
+    padding: 15px;
+    color: $nnabis2;
+    font-weight: bolder;
+    transition: all 0.5s;
+    border-style: solid;
+    border-color: $nnabis2;
+    border-width: 3px;
+    cursor: pointer;
+        &:hover{
+        color: $nnabis1;
+        background-color: $nnabis2; 
+        border-color: $nnabis1;
+        }
+  }
+  .espacio{
+    height: 20px;
+  }
+  /*galeria de imagenes*/
+  .galeria__{
+    margin-top: 3rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .galeria__imagenes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+  
+  .galeria__img1 img{
+    width: 400px;
+    height: 600px;
+    display: flex;
+    margin: 3rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+  }
+  .galeria__img2{
+    display: flex;
+    flex-direction: column;  
+    margin-top: 6rem;
+  
+  }
+  .galeria__img2 img{
+    border: black 2px solid;
+    width: 200px;
+    height: 200px;
+  }
+  .slidersize{
+    width: 100%;
+    height: 500px;
+  }
+  .carousel-indicators{
+    margin-left: 0px;
+  }
+ 
+  /*contacto*/
+
+.container2 {
+    @extend %columnas;
+    justify-content: center;
+    height: auto;
+    width: auto;
+  }
+.formulario{
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 2px;
+    margin: 2rem 5rem 1rem 5rem;
+    color: white;
+  }
+.formulario_img{
+    display: flex;
+    align-items: center;
+    
+  }
+form{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+  }
+input[type=text], select, textarea {
+    color: $nnabis3;
+    padding: 12px; 
+    border: 1px solid $nnabis3; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+  }
+  
+  
+  input[type=submit] {
+    padding: 12px 20px;
+    margin-left: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: $nnabis1;
+    padding: 15px;
+    color: $nnabis2;
+    font-weight: bolder;
+    transition: all 0.5s;
+    border-style: solid;
+    border-color: $nnabis2;
+    border-width: 3px;
+    &:hover {
+      background-color: $nnabis2;
+      color: $nnabis1;
+    }
+  }
+
+  input[type=reset] {
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: $nnabis1;
+    padding: 15px;
+    color: $nnabis2;
+    font-weight: bolder;
+    transition: all 0.5s;
+    border-style: solid;
+    border-color: $nnabis2;
+    border-width: 3px;
+    &:hover {
+      background-color: $nnabis2;
+      color: $nnabis1;
+    }
+  }
+
+  /*Index*/
+
+.section-producto{
+    background-position: 4rem;
+    background-color: $nnabis2;
+    background-repeat: no-repeat;
+    height:auto;
+    width:auto;
+    padding: 10px;
+  }
+#titulo-producto{
+    display: flex;
+    justify-content:center;
+    margin-top: 2rem;    
+    color: $nnabis1;
+    font-weight: bolder;
+    font-size: $fontnnabisT;
+    margin-bottom: 2rem;
+    
+  }
+.flex__pr{
+    @extend %disposicionfooter; 
+  }
+.producto-index{
+    @extend %disposicionfooter;
+    text-decoration: none!important;
+    width: 250px;
+    background-color: $nnabis1;   
+    margin-top: 2rem; 
+  }
+.centrado{
+    @extend %displaycolumn;
+    margin: auto;
+  }
+.button{
+    text-align: center;
+    padding: 20px;
+    color: $nnabis2;
+    border: 2px solid $nnabis3;
+    background-color: $nnabis1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+    font-weight: bolder;
+    transition: all 0.5s;
+    &:hover{
+      color: $nnabis1;
+      border-color:$nnabis1;
+      background-color: $nnabis2;
+
+    }
+  }        
+.button2 a{
+    text-align: center;
+    padding: 20px;
+    color: $nnabis2;
+    font-weight: bolder;
+    transition: all 0.5s;
+    background-color: $nnabis1;
+    border: 2px solid $nnabis2;
+    &:hover {
+      color: $nnabis1;
+      background-color: $nnabis2;
+
+    }
+    
+  }  
+ 
+  .galeria{
+    @extend %columnas;
+    text-align: center;
+  }
+  .fondo__galeria{
+    width: 1290px;
+    height: 280px;
+  }
+  .contenedor__galeria{
+    background-image: url(../img/portada\ galeria.jpg);
+    width: auto;
+    @extend %disposicionfooter;
+  }
+
+
+  .columnas__quienes{
+    width: auto;
+    @extend %columnas;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;    
+  }
+  .texto__quienes{
+    @extend %displaycolumn;  
+    background-color: $nnabis1; 
+   
+  }
+  .titulo-q{
+    @extend %columnas;
+    justify-content: center;
+  }
+  .text-q{
+    @extend %columnas;
+    justify-content: center;
+    width: 350px;
+    color: $nnabis3;
+    font-family: axiforma;
+    margin: 10px 0pxs 10px 0px;
+  }
+  .img__quienes img{
+    width: 400px;
+    height: 300px;
+    margin-left: 2rem;
+    
+  }
+  @media screen and (max-width:992px){
+    .img__quienes{
+        display: none;
+    }
+  }
+  .boton__quienes a{
+    @extend %columnas;
+    align-items:center;
+    justify-content: center;
+    color: $nnabis2;
+    font-weight: bolder;
+    transition: all 0.5s;
+    background-color: $nnabis1;
+    border: 2px solid $nnabis2;
+    width: 150px;
+    padding: 1rem;
+    margin-top: 2rem;
+    &:hover {
+      color: $nnabis1;
+      background-color: $nnabis2;
+    }
+  
+  }
