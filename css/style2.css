@@ -3,6 +3,7 @@
   background-size: cover;
   height: 500px;
   position: relative;
+  background-position: center;
 }
 
 .contenedor__galeria, .producto-index, .flex__pr, footer div, footer {
@@ -20,13 +21,13 @@
   position: absolute;
 }
 
-.boton__quienes a, .text-q, .titulo-q, .columnas__quienes, .galeria, .container2, .producto-index, .flex__pr, .manifiesto__img1, .manifiesto__texto, .manifiesto__2 {
+.boton__quienes a, .text-q, .titulo-q, .columnas__quienes, .galeria, .formulario_img, .container2, .producto-index, .flex__pr, .manifiesto__img1, .manifiesto__texto, .manifiesto__2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.texto__quienes, .centrado {
+.texto__quienes, .centrado, .img_mobile2 {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -108,6 +109,24 @@ header {
   color: #21412E;
 }
 
+@media only screen and (min-width: 100px) and (max-width: 700px) {
+  .button-index a {
+    font-size: 10px;
+    padding: 15px;
+    margin-top: 30px;
+    font-weight: bolder;
+    transition: all 0.5s;
+    background-color: #21412E;
+    font-family: axiforma;
+    border: 2px solid #FCB631;
+    cursor: pointer;
+    color: #FCB631;
+  }
+  .button-index a:hover {
+    background-color: #FCB631;
+    color: #21412E;
+  }
+}
 .hero-text-boton {
   top: 80%;
   left: 50%;
@@ -123,7 +142,7 @@ body h1 {
   font-family: monument;
   text-align: center;
   color: white;
-  font-size: 35px;
+  font-size: x-large;
 }
 
 body h2 {
@@ -150,6 +169,7 @@ body p {
   background-size: cover;
   height: 500px;
   position: relative;
+  background-position: center;
 }
 
 .contenedor__galeria, .producto-index, .flex__pr, footer div, footer {
@@ -167,13 +187,13 @@ body p {
   position: absolute;
 }
 
-.boton__quienes a, .text-q, .titulo-q, .columnas__quienes, .galeria, .container2, .producto-index, .flex__pr, .manifiesto__img1, .manifiesto__texto, .manifiesto__2 {
+.boton__quienes a, .text-q, .titulo-q, .columnas__quienes, .galeria, .formulario_img, .container2, .producto-index, .flex__pr, .manifiesto__img1, .manifiesto__texto, .manifiesto__2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.texto__quienes, .centrado {
+.texto__quienes, .centrado, .img_mobile2 {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -205,10 +225,15 @@ footer ul {
   line-height: 20px;
 }
 
+.datos-f {
+  margin-top: 2rem;
+}
+
 .hero-image-index, .hero-image-productos, .hero-image-manifiesto, .hero-image-galeria, .hero-image-contacto {
   background-size: cover;
   height: 500px;
   position: relative;
+  background-position: center;
 }
 
 .contenedor__galeria, .producto-index, .flex__pr, footer, footer div {
@@ -226,13 +251,13 @@ footer ul {
   position: absolute;
 }
 
-.boton__quienes a, .text-q, .titulo-q, .columnas__quienes, .galeria, .container2, .producto-index, .flex__pr, .manifiesto__img1, .manifiesto__texto, .manifiesto__2 {
+.boton__quienes a, .text-q, .titulo-q, .columnas__quienes, .galeria, .formulario_img, .container2, .producto-index, .flex__pr, .manifiesto__img1, .manifiesto__texto, .manifiesto__2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.texto__quienes, .centrado {
+.texto__quienes, .centrado, .img_mobile2 {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -389,7 +414,7 @@ main a:hover {
 
 .galeria__img2 img {
   border: black 2px solid;
-  width: 200px;
+  width: 100%;
   height: 200px;
 }
 
@@ -400,6 +425,29 @@ main a:hover {
 
 .carousel-indicators {
   margin-left: 0px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: #21412E;
+}
+
+@media screen and (max-width: 700px) {
+  .galeria__ {
+    display: none;
+  }
+}
+@media screen and (min-width: 701px) {
+  .img_mobile {
+    display: none;
+  }
+}
+.img_mobile2 {
+  align-content: center;
+}
+
+.img_mobile img {
+  max-width: 100%;
+  margin-top: 4px;
 }
 
 /*contacto*/
@@ -418,7 +466,7 @@ main a:hover {
 }
 
 .formulario_img {
-  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -441,7 +489,6 @@ input[type=text], select, textarea {
 
 input[type=submit] {
   padding: 12px 20px;
-  margin-left: 1rem;
   border: none;
   cursor: pointer;
   background-color: #21412E;
@@ -609,6 +656,7 @@ input[type=reset]:hover {
   background-size: cover;
   height: 500px;
   position: relative;
+  background-position: center;
 }
 
 footer, footer div, .flex__pr, .producto-index, .contenedor__galeria {
@@ -626,13 +674,13 @@ footer, footer div, .flex__pr, .producto-index, .contenedor__galeria {
   position: absolute;
 }
 
-.manifiesto__2, .manifiesto__texto, .manifiesto__img1, .flex__pr, .producto-index, .container2, .galeria, .columnas__quienes, .titulo-q, .text-q, .boton__quienes a {
+.manifiesto__2, .manifiesto__texto, .manifiesto__img1, .flex__pr, .producto-index, .container2, .formulario_img, .galeria, .columnas__quienes, .titulo-q, .text-q, .boton__quienes a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.centrado, .texto__quienes {
+.img_mobile2, .centrado, .texto__quienes {
   display: flex;
   align-items: center;
   flex-direction: column;

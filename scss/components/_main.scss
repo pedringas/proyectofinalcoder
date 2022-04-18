@@ -154,7 +154,7 @@ main{
   }
   .galeria__img2 img{
     border: black 2px solid;
-    width: 200px;
+    width: 100%;
     height: 200px;
   }
   .slidersize{
@@ -164,7 +164,31 @@ main{
   .carousel-indicators{
     margin-left: 0px;
   }
- 
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: $nnabis1;
+
+  }
+
+  @media screen and (max-width:700px){
+    .galeria__{
+        display: none;
+    } 
+  }
+  @media screen and (min-width:701px){
+    .img_mobile{
+        display: none;
+    } 
+
+  }
+.img_mobile2{
+  @extend %displaycolumn;
+  align-content: center;
+}
+  .img_mobile img{
+    max-width: 100%;
+    margin-top: 4px;    
+  }
+
   /*contacto*/
 
 .container2 {
@@ -181,9 +205,9 @@ main{
     color: white;
   }
 .formulario_img{
-    display: flex;
-    align-items: center;
-    
+  @extend %columnas;
+  justify-content: center;  
+  align-items: center;  
   }
 form{
     display: flex;
@@ -204,7 +228,6 @@ input[type=text], select, textarea {
   
   input[type=submit] {
     padding: 12px 20px;
-    margin-left: 1rem;
     border: none;
     cursor: pointer;
     background-color: $nnabis1;
@@ -357,6 +380,7 @@ input[type=text], select, textarea {
     .img__quienes{
         display: none;
     }
+  
   }
   .boton__quienes a{
     @extend %columnas;
@@ -376,3 +400,5 @@ input[type=text], select, textarea {
     }
   
   }
+
+  
