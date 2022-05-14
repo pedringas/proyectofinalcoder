@@ -11,10 +11,7 @@ footer{
         @extend %disposicionfooter;
         justify-content: center;
     }
-    img{
-        width: 100px;
-        height: 100px;
-    }
+    
     h2{
         font-size: 15px;
         list-style: none;
@@ -29,6 +26,26 @@ footer{
     }
 }
 
-.datos-f{
-    margin-top: 2rem;
+.footernnabis{
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.btnfooter a{
+    @extend %columnas;
+    align-items:center;
+    justify-content: center;
+    color: $nnabis2;
+    font-weight: bolder;
+    transition: all 0.5s;
+    background-color: $nnabis1;
+    border: 2px solid $nnabis2;
+    width: 150px;
+    padding: 1rem;
+    margin: 2rem 1rem;
+    &:hover {
+      color: $nnabis1;
+      background-color: $nnabis2;
+    }
 }

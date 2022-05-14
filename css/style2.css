@@ -6,12 +6,11 @@
   background-position: center;
 }
 
-.contenedor__galeria, .producto-index, .flex__pr, footer div, footer {
+.contenedor__galeria, .flex__pr, footer div, footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
 }
 
 .hero-text-boton, .hero-text {
@@ -21,13 +20,13 @@
   position: absolute;
 }
 
-.boton__quienes a, .text-q, .titulo-q, .columnas__quienes, .galeria, .formulario_img, .container2, .producto-index, .flex__pr, .manifiesto__img1, .manifiesto__texto, .manifiesto__2 {
+.boton__quienes a, .text-q, .titulo-q, .columnas__quienes, .galeria, .producto-index, .formulario_img, .container2, .flex__pr, .manifiesto__img1, .manifiesto__texto, .manifiesto__2, .btnfooter a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.texto__quienes, .centrado, .img_mobile2 {
+.texto__quienes, .centrado, .img_mobile2, .tituloblog-index {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -84,6 +83,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #d4ddd8;
+  justify-content: center;
 }
 
 .hero-text-boton {
@@ -98,15 +98,13 @@ header {
   margin-top: 30px;
   font-weight: bolder;
   transition: all 0.5s;
-  background-color: #21412E;
+  background-color: transparent;
   font-family: axiforma;
-  border: 2px solid #FCB631;
   cursor: pointer;
-  color: #FCB631;
+  color: #d4ddd8;
 }
 .button-index a:hover {
-  background-color: #FCB631;
-  color: #21412E;
+  color: #FCB631;
 }
 
 @media only screen and (min-width: 100px) and (max-width: 700px) {
@@ -144,6 +142,11 @@ body h1 {
   color: white;
   font-size: x-large;
 }
+body h4 {
+  color: #d4ddd8;
+  font-family: axiforma;
+  font-size: 20px;
+}
 
 body h2 {
   color: #d4ddd8;
@@ -172,12 +175,11 @@ body p {
   background-position: center;
 }
 
-.contenedor__galeria, .producto-index, .flex__pr, footer div, footer {
+.contenedor__galeria, .flex__pr, footer div, footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
 }
 
 .hero-text, .hero-text-boton {
@@ -187,13 +189,13 @@ body p {
   position: absolute;
 }
 
-.boton__quienes a, .text-q, .titulo-q, .columnas__quienes, .galeria, .formulario_img, .container2, .producto-index, .flex__pr, .manifiesto__img1, .manifiesto__texto, .manifiesto__2 {
+.boton__quienes a, .text-q, .titulo-q, .columnas__quienes, .galeria, .producto-index, .formulario_img, .container2, .flex__pr, .manifiesto__img1, .manifiesto__texto, .manifiesto__2, .btnfooter a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.texto__quienes, .centrado, .img_mobile2 {
+.texto__quienes, .centrado, .img_mobile2, .tituloblog-index {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -208,10 +210,6 @@ footer {
 footer div {
   justify-content: center;
 }
-footer img {
-  width: 100px;
-  height: 100px;
-}
 footer h2 {
   font-size: 15px;
   list-style: none;
@@ -225,8 +223,27 @@ footer ul {
   line-height: 20px;
 }
 
-.datos-f {
-  margin-top: 2rem;
+.footernnabis {
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.btnfooter a {
+  align-items: center;
+  justify-content: center;
+  color: #FCB631;
+  font-weight: bolder;
+  transition: all 0.5s;
+  background-color: #21412E;
+  border: 2px solid #FCB631;
+  width: 150px;
+  padding: 1rem;
+  margin: 2rem 1rem;
+}
+.btnfooter a:hover {
+  color: #21412E;
+  background-color: #FCB631;
 }
 
 .hero-image-index, .hero-image-productos, .hero-image-manifiesto, .hero-image-galeria, .hero-image-contacto {
@@ -236,12 +253,11 @@ footer ul {
   background-position: center;
 }
 
-.contenedor__galeria, .producto-index, .flex__pr, footer, footer div {
+.contenedor__galeria, .flex__pr, footer, footer div {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
 }
 
 .hero-text, .hero-text-boton {
@@ -251,13 +267,13 @@ footer ul {
   position: absolute;
 }
 
-.boton__quienes a, .text-q, .titulo-q, .columnas__quienes, .galeria, .formulario_img, .container2, .producto-index, .flex__pr, .manifiesto__img1, .manifiesto__texto, .manifiesto__2 {
+.boton__quienes a, .text-q, .titulo-q, .columnas__quienes, .galeria, .producto-index, .formulario_img, .container2, .flex__pr, .manifiesto__img1, .manifiesto__texto, .manifiesto__2, .btnfooter a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.texto__quienes, .centrado, .img_mobile2 {
+.texto__quienes, .centrado, .img_mobile2, .tituloblog-index {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -319,6 +335,85 @@ main a:hover {
   height: 100px;
 }
 
+/*ACORDEON INDEX*/
+.btnacordeon a {
+  align-items: center;
+}
+
+.btnacordeon2 a {
+  align-items: center;
+  float: right;
+}
+
+.acordeonindex {
+  align-items: center;
+  background-color: transparent;
+}
+
+.col-lg-6 {
+  padding: 0px;
+}
+
+.accordion-item {
+  background-color: transparent;
+  border: none;
+}
+
+.accordion-button {
+  margin-top: -10px;
+  background-color: transparent;
+  color: #d4ddd8;
+  border-bottom: 2px solid #d4ddd8;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #d4ddd8;
+}
+
+.accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.imgacordeon {
+  background-image: url(../img/Grupo\ 1750.png);
+  height: 293px;
+  background-size: contain;
+}
+.imgacordeon:hover {
+  background-image: url(../img/Grupo\ 1750\ BYN.jpg);
+}
+
+/* NOTICIAS */
+.tituloblog-index {
+  margin-top: 5rem;
+}
+
+.tituloblog-index h2 {
+  color: #FCB631;
+  font-family: monument;
+  margin-top: 1rem;
+}
+
+.cardblog {
+  padding: 2rem;
+  border: solid 2px #d4ddd8;
+  margin: 2rem 0;
+}
+
+.blogindex {
+  align-items: center;
+}
+
+.card-body a {
+  color: #d4ddd8;
+  transition: all 0.5s;
+}
+.card-body a:hover {
+  color: #FCB631;
+}
+
 /*producto*/
 .section-producto {
   background-position: 4rem;
@@ -340,14 +435,6 @@ main a:hover {
 
 .flex__pr {
   justify-content: space-evenly;
-}
-
-.producto-index {
-  justify-content: space-evenly;
-  text-decoration: none !important;
-  width: 250px;
-  background-color: #21412E;
-  margin-top: 2rem;
 }
 
 .card {
@@ -544,10 +631,7 @@ input[type=reset]:hover {
 }
 
 .producto-index {
-  text-decoration: none !important;
-  width: 250px;
-  background-color: #21412E;
-  margin-top: 2rem;
+  justify-content: space-around;
 }
 
 .centrado {
@@ -586,8 +670,14 @@ input[type=reset]:hover {
   background-color: #FCB631;
 }
 
+.button2 {
+  display: flex;
+  justify-content: center;
+}
+
 .galeria {
   text-align: center;
+  justify-content: center;
 }
 
 .fondo__galeria {
@@ -598,6 +688,7 @@ input[type=reset]:hover {
 .contenedor__galeria {
   background-image: url(../img/portada\ galeria.jpg);
   width: auto;
+  justify-content: space-around;
 }
 
 .columnas__quienes {
@@ -625,8 +716,8 @@ input[type=reset]:hover {
 }
 
 .img__quienes img {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   margin-left: 2rem;
 }
 
@@ -652,6 +743,84 @@ input[type=reset]:hover {
   background-color: #FCB631;
 }
 
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: none;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #21412E;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.manifiestoindex {
+  background-image: url(../img/manifiesto\ fondo.png);
+  height: 800px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.manifiestoindex h3 {
+  color: #FCB631;
+  font-family: monument;
+  margin-top: 4rem;
+}
+
+.manifiestoindex p {
+  background-color: #21412E;
+  font-size: large;
+  font-weight: bold;
+}
+
+.texto_man_index {
+  justify-content: center;
+  text-align: center;
+}
+
 .hero-image-index, .hero-image-productos, .hero-image-manifiesto, .hero-image-galeria, .hero-image-contacto {
   background-size: cover;
   height: 500px;
@@ -659,12 +828,11 @@ input[type=reset]:hover {
   background-position: center;
 }
 
-footer, footer div, .flex__pr, .producto-index, .contenedor__galeria {
+footer, footer div, .flex__pr, .contenedor__galeria {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
 }
 
 .hero-text, .hero-text-boton {
@@ -674,13 +842,13 @@ footer, footer div, .flex__pr, .producto-index, .contenedor__galeria {
   position: absolute;
 }
 
-.manifiesto__2, .manifiesto__texto, .manifiesto__img1, .flex__pr, .producto-index, .container2, .formulario_img, .galeria, .columnas__quienes, .titulo-q, .text-q, .boton__quienes a {
+.btnfooter a, .manifiesto__2, .manifiesto__texto, .manifiesto__img1, .flex__pr, .container2, .formulario_img, .producto-index, .galeria, .columnas__quienes, .titulo-q, .text-q, .boton__quienes a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.img_mobile2, .centrado, .texto__quienes {
+.tituloblog-index, .img_mobile2, .centrado, .texto__quienes {
   display: flex;
   align-items: center;
   flex-direction: column;

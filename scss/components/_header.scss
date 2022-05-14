@@ -45,12 +45,13 @@ header{
 .navbar-toggler-icon{
         background-image: url();
       }
-.hero-text {
+.hero-text{
         @extend %textoheader;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: $nnabis3;
+        justify-content: center;
     
       }
 
@@ -67,14 +68,13 @@ header{
         margin-top: $fontnnabisT;
         font-weight: bolder;
         transition: all 0.5s;
-        background-color: $nnabis1;
+        background-color: transparent;
         font-family: axiforma;
-        border: 2px solid $nnabis2;
+        
         cursor: pointer;
-        color: $nnabis2;
-        &:hover{
-            background-color: $nnabis2;    
-            color:$nnabis1;
+        color: $nnabis3;
+        &:hover{    
+            color:$nnabis2;
         }
 }
 @media only screen and (min-width: 100px) and (max-width: 700px){
