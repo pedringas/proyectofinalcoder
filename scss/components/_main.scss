@@ -5,6 +5,15 @@
   .galeria__{
     display: none;
   } 
+  .acordeonindex{
+    display: none;
+  }
+}
+@media (max-width:992px){
+
+  .acordeonindex{
+    display: none;
+  }
 }
 @media screen and (min-width:701px){
   .img_mobile{
