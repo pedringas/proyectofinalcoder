@@ -125,6 +125,11 @@ header {
     color: #21412E;
   }
 }
+.hero-text {
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-text-boton {
   top: 80%;
   left: 50%;

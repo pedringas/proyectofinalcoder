@@ -92,13 +92,17 @@ header{
         &:hover{
             background-color: $nnabis2;    
             color:$nnabis1;
-        }    
+        }  
+       
 }
 
     
     
 }
-
+.hero-text{
+    flex-direction: column;
+    align-items: center
+}
 .hero-text-boton {
     @extend %textoheader;
         top: 80%;
