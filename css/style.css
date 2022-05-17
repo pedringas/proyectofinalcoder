@@ -145,7 +145,7 @@ body h1 {
   font-family: monument;
   text-align: center;
   color: white;
-  font-size: x-large;
+  font-size: xx-large;
 }
 body h4 {
   color: #d4ddd8;
@@ -298,13 +298,9 @@ footer ul {
     display: none;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 600px) {
   .img__quienes {
     display: none;
-  }
-
-  .manifiestomargen {
-    margin-bottom: 500px;
   }
 }
 /*about*/
@@ -401,7 +397,7 @@ main a:hover {
 }
 
 .imgacordeon {
-  background-image: url(../img/Grupo\ 1750.png);
+  background-image: url(../img/cultivannabis\ acordeon.png);
   height: 293px;
   background-size: contain;
 }
@@ -707,30 +703,29 @@ input[type=reset]:hover {
 .columnas__quienes {
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
 
 .texto__quienes {
   background-color: #21412E;
 }
 
-.titulo-q {
-  justify-content: center;
-}
-
 .text-q {
-  justify-content: center;
+  justify-content: flex-start;
   width: 300px;
   color: #d4ddd8;
   font-family: axiforma;
   margin: 10px 0pxs 10px 0px;
 }
 
+.text-q H3 {
+  color: #FCB631;
+  font-family: monument;
+  font-size: large;
+}
+
 .img__quienes img {
-  width: 95%;
-  height: 100%;
-  margin-left: 2rem;
+  width: 90%;
+  height: 600px;
 }
 
 .boton__quienes a {
@@ -750,10 +745,14 @@ input[type=reset]:hover {
   background-color: #FCB631;
 }
 
+.quienesindex {
+  height: 200px;
+}
+
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 300px;
+  height: 350px;
   border: none;
   margin: 2rem 0;
   perspective: 1000px;
@@ -764,7 +763,7 @@ input[type=reset]:hover {
 .flip-card-inner {
   position: relative;
   width: 300px;
-  height: 300px;
+  height: 350px;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
@@ -793,24 +792,34 @@ input[type=reset]:hover {
 .flip-card-front {
   background-color: #bbb;
   color: black;
+  box-shadow: 10px 5px 5px #21412E;
 }
 
 /* Style the back side */
 .flip-card-back {
   background-color: #21412E;
+  border: solid #d4ddd8 2px;
+  padding: 20px;
   color: white;
   transform: rotateY(180deg);
 }
 
 .manifiestoindex {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  background-image: url(../img/manifiesto\ fondo.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .manifiestotitulo h3 {
   color: #FCB631;
   font-family: monument;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .textomanifiesto {
@@ -819,12 +828,14 @@ input[type=reset]:hover {
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
-  top: 33%;
-  position: absolute;
   background-color: #21412E;
-  padding: 1rem;
+  margin-top: 100px;
   font-size: large;
   font-weight: bold;
+}
+
+.textomanifiesto p {
+  justify-content: center;
 }
 
 .texto_man_index {

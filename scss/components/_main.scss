@@ -5,27 +5,19 @@
   .galeria__{
     display: none;
   } 
-  
-  
 }
 @media screen and (min-width:701px){
   .img_mobile{
       display: none;
   } 
-  
-  
- 
 
 }
-@media screen and (max-width:992px){
-  .img__quienes{
-      display: none;
-  }
-  .manifiestomargen{
-    margin-bottom: 500px;
-  }
- 
-  
+@media screen and (max-width:600px){
+
+ .img__quienes{
+   display: none;
+ }
+
 
 }
 
@@ -127,7 +119,7 @@ main{
  }
 
  .imgacordeon{
-   background-image: url(../img/Grupo\ 1750.png);
+   background-image: url(../img/cultivannabis\ acordeon.png);
    height: 293px;
    background-size: contain;
    &:hover{
@@ -435,8 +427,7 @@ input[type=text], select, textarea {
     @extend %columnas;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;    
+       
   }
   .texto__quienes{
     @extend %displaycolumn;  
@@ -445,20 +436,25 @@ input[type=text], select, textarea {
   }
   .titulo-q{
     @extend %columnas;
-    justify-content: center;
+    
   }
   .text-q{
     @extend %columnas;
-    justify-content: center;
+    justify-content: flex-start;
     width: 300px;
     color: $nnabis3;
     font-family: axiforma;
     margin: 10px 0pxs 10px 0px;
   }
+  .text-q H3{
+    color: $nnabis2;
+    font-family: monument;
+    font-size: large;
+  }
   .img__quienes img{
-    width: 95%;
-    height: 100%;
-    margin-left: 2rem;
+    width: 90%;
+    height: 600px;
+    
     
   }
 
@@ -480,11 +476,14 @@ input[type=text], select, textarea {
     }
   
   }
+  .quienesindex{
+    height: 200px;
+  }
 
   .flip-card {
     background-color: transparent;
     width: 300px;
-    height: 300px;
+    height: 350px;
     border: none;
     margin: 2rem 0;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -494,7 +493,7 @@ input[type=text], select, textarea {
   .flip-card-inner {
     position: relative;
     width: 300px;
-    height: 300px;
+    height: 350px;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -522,40 +521,53 @@ input[type=text], select, textarea {
   .flip-card-front {
     background-color: #bbb;
     color: black;
+    box-shadow:  10px 5px 5px $nnabis1;
   }
   
   /* Style the back side */
   .flip-card-back {
     background-color: $nnabis1;
+    border: solid $nnabis3 2px;
+    padding: 20px;
     color: white;
     transform: rotateY(180deg);
   }
 
 
+
+
   .manifiestoindex{
-    position: relative;
-    display: inline-block;
-    
-    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    background-image: url(../img/manifiesto\ fondo.png);
+    background-position: center;
+    background-size: cover;
   }
   .manifiestotitulo h3{
     color: $nnabis2;
     font-family: monument;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
+  
   .textomanifiesto{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    top: 33%;
-    position: absolute;
     background-color: $nnabis1;   
-    padding: 1rem;
+    margin-top: 100px;
     font-size: large;
     font-weight: bold;
   }
+  .textomanifiesto p{
+    justify-content: center;
+  }
+ 
   .texto_man_index{
     justify-content: center;
     text-align: center;
