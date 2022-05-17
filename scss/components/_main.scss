@@ -1,14 +1,41 @@
 @import "../base/variables";
 @import "../base/extends";
 
+@media (max-width:700px){
+  .galeria__{
+    display: none;
+  } 
+  
+  
+}
+@media screen and (min-width:701px){
+  .img_mobile{
+      display: none;
+  } 
+  
+  
+ 
+
+}
+@media screen and (max-width:992px){
+  .img__quienes{
+      display: none;
+  }
+  .manifiestomargen{
+    margin-bottom: 500px;
+  }
+ 
+  
+
+}
+
+
+
 /*about*/
 main{
     h2{
         margin: 2rem;
     }
-    h5{
-        color: $nnabis3;
-      }
     p{
         color: $nnabis3;
     }
@@ -145,12 +172,10 @@ main{
     padding: 10px;
   }
 
-#titulo-producto{
+#titulo-producto img{
     display: flex;
     justify-content:center;
     margin-top: 2rem;    
-    color: $nnabis1;
-    font-weight: bolder;
     margin-bottom: 2rem;
     
   }
@@ -235,17 +260,7 @@ main{
 
   }
 
-  @media screen and (max-width:700px){
-    .galeria__{
-        display: none;
-    } 
-  }
-  @media screen and (min-width:701px){
-    .img_mobile{
-        display: none;
-    } 
-
-  }
+ 
 .img_mobile2{
   @extend %displaycolumn;
   align-content: center;
@@ -362,9 +377,10 @@ input[type=text], select, textarea {
   }
 .button{
     text-align: center;
-    padding: 20px;
+    padding: 8px 12px;
     color: $nnabis2;
-    border: 2px solid $nnabis3;
+    border: 2px solid $nnabis2;
+    border-radius: 2px;
     background-color: $nnabis1;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -416,7 +432,6 @@ input[type=text], select, textarea {
 
 
   .columnas__quienes{
-    width: auto;
     @extend %columnas;
     justify-content: center;
     align-items: center;
@@ -435,23 +450,18 @@ input[type=text], select, textarea {
   .text-q{
     @extend %columnas;
     justify-content: center;
-    width: 350px;
+    width: 300px;
     color: $nnabis3;
     font-family: axiforma;
     margin: 10px 0pxs 10px 0px;
   }
   .img__quienes img{
-    width: 100%;
+    width: 95%;
     height: 100%;
     margin-left: 2rem;
     
   }
-  @media screen and (max-width:992px){
-    .img__quienes{
-        display: none;
-    }
-  
-  }
+
   .boton__quienes a{
     @extend %columnas;
     align-items:center;
@@ -476,7 +486,7 @@ input[type=text], select, textarea {
     width: 300px;
     height: 300px;
     border: none;
-    
+    margin: 2rem 0;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
@@ -521,22 +531,28 @@ input[type=text], select, textarea {
     transform: rotateY(180deg);
   }
 
+
   .manifiestoindex{
-    background-image: url(../img/manifiesto\ fondo.png);
-    height: 800px;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    display: inline-block;
+    
+    
   }
-  .manifiestoindex h3{
+  .manifiestotitulo h3{
     color: $nnabis2;
     font-family: monument;
     margin-top: 4rem;
   }
-  .manifiestoindex p{
-    background-color: $nnabis1;
+  .textomanifiesto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    top: 33%;
+    position: absolute;
+    background-color: $nnabis1;   
+    padding: 1rem;
     font-size: large;
     font-weight: bold;
   }
@@ -544,3 +560,5 @@ input[type=text], select, textarea {
     justify-content: center;
     text-align: center;
   }
+
+  

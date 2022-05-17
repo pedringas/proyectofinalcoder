@@ -147,6 +147,9 @@ body h4 {
   font-family: axiforma;
   font-size: 20px;
 }
+body h5 {
+  color: white;
+}
 
 body h2 {
   color: #d4ddd8;
@@ -280,12 +283,28 @@ footer ul {
   justify-content: space-evenly;
 }
 
+@media (max-width: 700px) {
+  .galeria__ {
+    display: none;
+  }
+}
+@media screen and (min-width: 701px) {
+  .img_mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .img__quienes {
+    display: none;
+  }
+
+  .manifiestomargen {
+    margin-bottom: 500px;
+  }
+}
 /*about*/
 main h2 {
   margin: 2rem;
-}
-main h5 {
-  color: #d4ddd8;
 }
 main p {
   color: #d4ddd8;
@@ -424,12 +443,10 @@ main a:hover {
   padding: 10px;
 }
 
-#titulo-producto {
+#titulo-producto img {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  color: #21412E;
-  font-weight: bolder;
   margin-bottom: 2rem;
 }
 
@@ -518,16 +535,6 @@ main a:hover {
   background-color: #21412E;
 }
 
-@media screen and (max-width: 700px) {
-  .galeria__ {
-    display: none;
-  }
-}
-@media screen and (min-width: 701px) {
-  .img_mobile {
-    display: none;
-  }
-}
 .img_mobile2 {
   align-content: center;
 }
@@ -640,9 +647,10 @@ input[type=reset]:hover {
 
 .button {
   text-align: center;
-  padding: 20px;
+  padding: 8px 12px;
   color: #FCB631;
-  border: 2px solid #d4ddd8;
+  border: 2px solid #FCB631;
+  border-radius: 2px;
   background-color: #21412E;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -692,7 +700,6 @@ input[type=reset]:hover {
 }
 
 .columnas__quienes {
-  width: auto;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
@@ -709,23 +716,18 @@ input[type=reset]:hover {
 
 .text-q {
   justify-content: center;
-  width: 350px;
+  width: 300px;
   color: #d4ddd8;
   font-family: axiforma;
   margin: 10px 0pxs 10px 0px;
 }
 
 .img__quienes img {
-  width: 100%;
+  width: 95%;
   height: 100%;
   margin-left: 2rem;
 }
 
-@media screen and (max-width: 992px) {
-  .img__quienes {
-    display: none;
-  }
-}
 .boton__quienes a {
   align-items: center;
   justify-content: center;
@@ -748,6 +750,7 @@ input[type=reset]:hover {
   width: 300px;
   height: 300px;
   border: none;
+  margin: 2rem 0;
   perspective: 1000px;
   /* Remove this if you don't want the 3D effect */
 }
@@ -795,23 +798,26 @@ input[type=reset]:hover {
 }
 
 .manifiestoindex {
-  background-image: url(../img/manifiesto\ fondo.png);
-  height: 800px;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  display: inline-block;
 }
 
-.manifiestoindex h3 {
+.manifiestotitulo h3 {
   color: #FCB631;
   font-family: monument;
   margin-top: 4rem;
 }
 
-.manifiestoindex p {
+.textomanifiesto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  top: 33%;
+  position: absolute;
   background-color: #21412E;
+  padding: 1rem;
   font-size: large;
   font-weight: bold;
 }
@@ -855,4 +861,4 @@ footer, footer div, .flex__pr, .contenedor__galeria {
   justify-content: space-evenly;
 }
 
-/*# sourceMappingURL=style2.css.map */
+/*# sourceMappingURL=style.css.map */
