@@ -45,13 +45,14 @@ header{
 .navbar-toggler-icon{
         background-image: url();
       }
-.hero-text{
+.hero-text img{
         @extend %textoheader;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: $nnabis3;
         justify-content: center;
+      
     
       }
 

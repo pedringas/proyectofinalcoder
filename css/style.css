@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-.hero-text-boton, .hero-text {
+.hero-text-boton, .hero-text img {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -78,7 +78,7 @@ header {
   background-image: url();
 }
 
-.hero-text {
+.hero-text img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -153,7 +153,7 @@ body h4 {
 }
 body h5 {
   font-family: monument;
-  font-size: larger;
+  font-size: medium;
   color: white;
 }
 body h6 {
@@ -195,7 +195,7 @@ body p {
   align-items: center;
 }
 
-.hero-text, .hero-text-boton {
+.hero-text img, .hero-text-boton {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -273,7 +273,7 @@ footer ul {
   align-items: center;
 }
 
-.hero-text, .hero-text-boton {
+.hero-text img, .hero-text-boton {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -409,9 +409,21 @@ main a:hover {
   color: #d4ddd8;
 }
 
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/arrow\ down\ white.png);
+}
+
+.accordion-button::after {
+  background-image: url(../img/arrow\ up\ white.png);
+}
+
 .accordion-button:focus {
-  border: none;
+  border-color: #d4ddd8;
   box-shadow: none;
+}
+
+.accrdio-body p {
+  color: #d4ddd8;
 }
 
 .imgacordeon {
@@ -663,21 +675,23 @@ input[type=reset]:hover {
   margin: auto;
 }
 
-.button {
+.button3 {
   text-align: center;
   padding: 5px 12px;
   color: #21412E;
   background-color: #d4ddd8;
   margin-top: 40px;
+  border-color: transparent;
   margin-bottom: 40px;
   align-items: center;
   transition: all 0.5s;
   font-family: axiforma-thin;
   font-size: small;
 }
-.button:hover {
+.button3:hover {
   color: #d4ddd8;
   background-color: #21412E;
+  border-color: #d4ddd8;
 }
 
 .button2 a {
@@ -880,7 +894,7 @@ footer, footer div, .flex__pr, .contenedor__galeria {
   align-items: center;
 }
 
-.hero-text, .hero-text-boton {
+.hero-text img, .hero-text-boton {
   display: flex;
   flex-wrap: wrap;
   text-align: center;

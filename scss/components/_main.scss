@@ -125,9 +125,18 @@ main{
    background-color: transparent;
    color: $nnabis3;
  }
+ .accordion-button:not(.collapsed)::after{
+   background-image: url(../img/arrow\ down\ white.png);
+ }
+ .accordion-button::after{
+   background-image: url(../img/arrow\ up\ white.png);
+ }
  .accordion-button:focus{
-   border: none;
+   border-color: $nnabis3;
    box-shadow: none;
+ }
+ .accrdio-body p{
+   color: $nnabis3;
  }
 
  .imgacordeon{
@@ -379,12 +388,13 @@ input[type=text], select, textarea {
     @extend %displaycolumn;
     margin: auto;
   }
-.button{
+.button3{
     text-align: center;
     padding: 5px 12px;
     color: $nnabis1;
     background-color: $nnabis3;
     margin-top: 40px;
+    border-color: transparent;
     margin-bottom: 40px;
     align-items: center;
     transition: all 0.5s;
@@ -393,6 +403,7 @@ input[type=text], select, textarea {
     &:hover{
       color: $nnabis3;
       background-color: $nnabis1;
+      border-color: $nnabis3;
 
     }
   }        
