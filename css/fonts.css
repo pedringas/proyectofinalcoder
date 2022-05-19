@@ -10,3 +10,11 @@
     font-family: axiforma;
     src: url(../fonts/Kastelov\ -\ Axiforma\ Regular.otf);
 }
+@font-face {
+    font-family: axiforma-thin;
+    src: url(../fonts/Kastelov\ -\ Axiforma\ Thin.otf);
+}
+@font-face {
+    font-family: luimp;
+    src: url(../fonts/Luimp\ Light.otf);
+}

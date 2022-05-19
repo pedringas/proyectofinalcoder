@@ -96,7 +96,6 @@ header {
 .button-index a {
   padding: 15px;
   margin-top: 30px;
-  font-weight: bolder;
   transition: all 0.5s;
   background-color: transparent;
   font-family: axiforma;
@@ -112,7 +111,6 @@ header {
     font-size: 10px;
     padding: 15px;
     margin-top: 30px;
-    font-weight: bolder;
     transition: all 0.5s;
     background-color: #21412E;
     font-family: axiforma;
@@ -140,6 +138,7 @@ header {
 body {
   background-color: #21412E;
   font-family: axiforma;
+  margin: 0px;
 }
 body h1 {
   font-family: monument;
@@ -153,7 +152,13 @@ body h4 {
   font-size: 20px;
 }
 body h5 {
+  font-family: monument;
+  font-size: larger;
   color: white;
+}
+body h6 {
+  color: #d4ddd8;
+  font-family: axiforma-thin;
 }
 
 body h2 {
@@ -294,6 +299,10 @@ footer ul {
   }
 
   .acordeonindex {
+    display: none;
+  }
+
+  .manifiestotitulo2 {
     display: none;
   }
 }
@@ -477,13 +486,12 @@ main a:hover {
   text-decoration: none;
   text-align: center;
   background-color: #21412E;
-  padding: 15px;
+  padding: 8px 14px;
   color: #FCB631;
-  font-weight: bolder;
   transition: all 0.5s;
   border-style: solid;
   border-color: #FCB631;
-  border-width: 3px;
+  border-width: 2px;
   cursor: pointer;
 }
 .boton_comprar a:hover {
@@ -657,35 +665,33 @@ input[type=reset]:hover {
 
 .button {
   text-align: center;
-  padding: 8px 12px;
-  color: #FCB631;
-  border: 2px solid #FCB631;
-  border-radius: 2px;
-  background-color: #21412E;
+  padding: 5px 12px;
+  color: #21412E;
+  background-color: #d4ddd8;
   margin-top: 40px;
   margin-bottom: 40px;
   align-items: center;
-  font-weight: bolder;
   transition: all 0.5s;
+  font-family: axiforma-thin;
+  font-size: small;
 }
 .button:hover {
-  color: #21412E;
-  border-color: #21412E;
-  background-color: #FCB631;
+  color: #d4ddd8;
+  background-color: #21412E;
 }
 
 .button2 a {
   text-align: center;
-  padding: 20px;
-  color: #FCB631;
-  font-weight: bolder;
+  padding: 5px 12px;
+  color: #21412E;
   transition: all 0.5s;
-  background-color: #21412E;
-  border: 2px solid #FCB631;
+  font-family: axiforma-thin;
+  font-size: medium;
+  background-color: #d4ddd8;
 }
 .button2 a:hover {
-  color: #21412E;
-  background-color: #FCB631;
+  color: #d4ddd8;
+  background-color: #21412E;
 }
 
 .button2 {
@@ -720,7 +726,7 @@ input[type=reset]:hover {
 
 .text-q {
   justify-content: flex-start;
-  width: 300px;
+  width: auto;
   color: #d4ddd8;
   font-family: axiforma;
   margin: 10px 0pxs 10px 0px;
@@ -729,24 +735,24 @@ input[type=reset]:hover {
 .text-q H3 {
   color: #FCB631;
   font-family: monument;
-  font-size: large;
+  font-size: x-large;
 }
 
 .img__quienes img {
   width: 90%;
-  height: 600px;
+  height: 500px;
+  margin-left: 30px;
 }
 
 .boton__quienes a {
   align-items: center;
   justify-content: center;
   color: #FCB631;
-  font-weight: bolder;
   transition: all 0.5s;
   background-color: #21412E;
   border: 2px solid #FCB631;
   width: 150px;
-  padding: 1rem;
+  padding: 5px 12px;
   margin-top: 2rem;
 }
 .boton__quienes a:hover {
@@ -819,16 +825,25 @@ input[type=reset]:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 800px;
-  background-image: url(../img/manifiesto\ fondo.png);
-  background-position: center;
-  background-size: cover;
+  height: 600px;
+  background-image: url(../img/FONDO\ MANIFIESTO.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  margin-bottom: 10rem;
 }
 
 .manifiestotitulo h3 {
   color: #FCB631;
   font-family: monument;
-  margin-top: 2rem;
+}
+
+.manifiestotitulo2 h2 {
+  display: flex;
+  justify-content: center;
+  color: #1A3927;
+  font-family: luimp;
+  font-size: 150px;
 }
 
 .textomanifiesto {
@@ -838,7 +853,6 @@ input[type=reset]:hover {
   align-items: center;
   text-align: center;
   background-color: #21412E;
-  margin-top: 100px;
   font-size: large;
   font-weight: bold;
 }

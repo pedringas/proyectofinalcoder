@@ -8,6 +8,9 @@
   .acordeonindex{
     display: none;
   }
+  .manifiestotitulo2{
+    display: none;
+  }
 }
 @media (max-width:992px){
 
@@ -198,18 +201,18 @@ main{
     text-decoration: none;
     text-align: center;
     background-color: $nnabis1;
-    padding: 15px;
+    padding: 8px 14px;
     color: $nnabis2;
-    font-weight: bolder;
     transition: all 0.5s;
     border-style: solid;
     border-color: $nnabis2;
-    border-width: 3px;
+    border-width: 2px;
     cursor: pointer;
         &:hover{
         color: $nnabis1;
         background-color: $nnabis2; 
         border-color: $nnabis1;
+      
         }
   }
   .espacio{
@@ -378,34 +381,32 @@ input[type=text], select, textarea {
   }
 .button{
     text-align: center;
-    padding: 8px 12px;
-    color: $nnabis2;
-    border: 2px solid $nnabis2;
-    border-radius: 2px;
-    background-color: $nnabis1;
+    padding: 5px 12px;
+    color: $nnabis1;
+    background-color: $nnabis3;
     margin-top: 40px;
     margin-bottom: 40px;
     align-items: center;
-    font-weight: bolder;
     transition: all 0.5s;
+    font-family: axiforma-thin;
+    font-size: small;
     &:hover{
-      color: $nnabis1;
-      border-color:$nnabis1;
-      background-color: $nnabis2;
+      color: $nnabis3;
+      background-color: $nnabis1;
 
     }
   }        
 .button2 a{
     text-align: center;
-    padding: 20px;
-    color: $nnabis2;
-    font-weight: bolder;
+    padding: 5px 12px;
+    color: $nnabis1;
     transition: all 0.5s;
-    background-color: $nnabis1;
-    border: 2px solid $nnabis2;
+    font-family: axiforma-thin;
+    font-size: medium;
+    background-color: $nnabis3;
     &:hover {
-      color: $nnabis1;
-      background-color: $nnabis2;
+      color: $nnabis3;
+      background-color: $nnabis1;
 
     }
     
@@ -441,6 +442,7 @@ input[type=text], select, textarea {
   .texto__quienes{
     @extend %displaycolumn;  
     background-color: $nnabis1; 
+
    
   }
   .titulo-q{
@@ -450,7 +452,7 @@ input[type=text], select, textarea {
   .text-q{
     @extend %columnas;
     justify-content: flex-start;
-    width: 300px;
+    width: auto;
     color: $nnabis3;
     font-family: axiforma;
     margin: 10px 0pxs 10px 0px;
@@ -458,11 +460,12 @@ input[type=text], select, textarea {
   .text-q H3{
     color: $nnabis2;
     font-family: monument;
-    font-size: large;
+    font-size: x-large;
   }
   .img__quienes img{
     width: 90%;
-    height: 600px;
+    height: 500px;
+    margin-left: 30px;
     
     
   }
@@ -472,12 +475,12 @@ input[type=text], select, textarea {
     align-items:center;
     justify-content: center;
     color: $nnabis2;
-    font-weight: bolder;
+    
     transition: all 0.5s;
     background-color: $nnabis1;
     border: 2px solid $nnabis2;
     width: 150px;
-    padding: 1rem;
+    padding: 5px 12px;
     margin-top: 2rem;
     &:hover {
       color: $nnabis1;
@@ -551,16 +554,27 @@ input[type=text], select, textarea {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 800px;
-    background-image: url(../img/manifiesto\ fondo.png);
-    background-position: center;
-    background-size: cover;
+    height: 600px;
+    background-image: url(../img/FONDO\ MANIFIESTO.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    margin-bottom: 10rem;
+
   }
   .manifiestotitulo h3{
     color: $nnabis2;
     font-family: monument;
-    margin-top: 2rem;
+    
   }
+  .manifiestotitulo2 h2{
+    display: flex;
+    justify-content: center;
+    color: #1A3927;
+    font-family: luimp;
+    font-size: 150px;
+  
+    }
   
   .textomanifiesto{
     display: flex;
@@ -569,7 +583,6 @@ input[type=text], select, textarea {
     align-items: center;
     text-align: center;
     background-color: $nnabis1;   
-    margin-top: 100px;
     font-size: large;
     font-weight: bold;
   }

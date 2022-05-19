@@ -2,6 +2,7 @@
 body{
     background-color: $nnabis1;
     font-family: axiforma;
+    margin: 0px;
     h1{
         font-family: monument;
         text-align: center;
@@ -14,9 +15,16 @@ body{
         font-size: 20px;
     }
     h5{
+        font-family: monument;
+        font-size: larger;
         color: white;
-        
     }
+        
+    h6 {
+        color: $nnabis3;
+        font-family: axiforma-thin;
+    }
+ 
 }
 
 body{
