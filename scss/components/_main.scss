@@ -159,13 +159,16 @@ main{
    margin-top: 1rem;
  }
  .cardblog{
-   padding: 2rem;
+   padding: 1rem;
    border: solid 2px $nnabis3;
    margin: 2rem 0;
  }
  .blogindex{
    align-items: center;
 
+ }
+ .card{
+   align-content: center;
  }
  .card-body a{
    color: $nnabis3;
