@@ -169,13 +169,23 @@ main{
  }
  .card{
    align-content: center;
+   border: none;
+   border-radius: 10px;
+ }
+ .card2{
+  align-content: center;
  }
  .card-body a{
    color: $nnabis3;
    transition: all 0.5s;
+   margin: 0px;
    &:hover{
      color: $nnabis2;
    }
+
+ }
+ .card-body{
+   padding: 10px;
 
  }
   /*producto*/
@@ -203,11 +213,61 @@ main{
 
   .card{
       background-color: $nnabis1;
+      margin-top: 20px;
+      box-shadow:  10px 5px 5px rgb(35, 44, 35);
   }
+  .fondocard-cbn {
+    background-image: url(../img/CBN\ +\ VALERIANA.jpg);
+    @extend %card;
+    &:hover{
+    background-image: url(../img/Nnabis\ 7CUADRADO\ cbn.jpg);
+  }
+  }
+  .fondocard-11 {
+    background-image: url(../img/Nnabis\ 4CUADRADO.jpg);
+    @extend %card;
+    &:hover{
+    background-image: url(../img/Nnabis\ 4CUADRADO\ 1.1.jpg);
+  }
+  }
+  .fondocard-pet {
+    background-image: url(../img/GOLDEN\ PET.jpg);
+    @extend %card;
+    &:hover{
+    background-image: url(/img/nnabis\ pet.jpg); 
+    
+  }
+  }
+  .fondocard-energy{
+    background-image: url(../img/ENERGY\ SPORT.jpg);
+    @extend %card;
+    &:hover{
+    background-image: url(../img/Nnabis\ 6\ CUADRADO\ energy.jpg);
+  }
+  }
+  .fondocard-carnet{
+    background-image: url(../img/Editable\ reprocan.jpg);
+    @extend %card;
+    &:hover{
+    background-image: url(../img/Editable\ reprocan\ atras.jpg);
+  }
+  }
+
+
+
+
 
   .boton_comprar{
     margin:2rem 0px;
     cursor: pointer;
+  }
+  .boton_comprar2{
+    
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
   }
   .boton_comprar a{
     text-decoration: none;
@@ -218,7 +278,27 @@ main{
     transition: all 0.5s;
     border-style: solid;
     border-color: $nnabis2;
-    border-width: 2px;
+    border-width: 1px;
+    cursor: pointer;
+        &:hover{
+        color: $nnabis1;
+        background-color: $nnabis2; 
+        border-color: $nnabis1;
+      
+        }
+  }
+  .boton_comprar2 a{
+    text-decoration: none;
+    text-align: center;
+    font-weight: lighter;
+    font-size: small;
+    background-color: $nnabis1;
+    padding: 5px 10px;
+    color: $nnabis2;
+    transition: all 0.5s;
+    border-style: solid;
+    border-color: $nnabis2;
+    border-width: 1px;
     cursor: pointer;
         &:hover{
         color: $nnabis1;
@@ -229,6 +309,18 @@ main{
   }
   .espacio{
     height: 20px;
+  }
+
+  .subtitulotienda h3{
+    font-family: monument;
+    color: white;
+  }
+  .subtitulotienda{
+    border-bottom: 2px solid black;
+    margin-top: 50px;
+  }
+  .row>*{
+    padding: 0px;
   }
   /*galeria de imagenes*/
   .galeria__{
@@ -286,6 +378,7 @@ main{
     margin-top: 4px;    
   }
 
+  
   /*contacto*/
 
 .container2 {
@@ -375,7 +468,7 @@ input[type=text], select, textarea {
     justify-content:center;
     margin-top: 2rem;    
     color: $nnabis1;
-    font-weight: bolder;
+    font-family: monument;
     font-size: $fontnnabisT;
     margin-bottom: 2rem;
     
@@ -547,7 +640,7 @@ input[type=text], select, textarea {
   .flip-card-front {
     background-color: #bbb;
     color: black;
-    box-shadow:  10px 5px 5px $nnabis1;
+    box-shadow:  10px 5px 5px rgb(35, 44, 35);
   }
   
   /* Style the back side */

@@ -30,3 +30,12 @@
     flex-direction: column;
     justify-content:space-evenly; 
 }
+
+%card{
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        height: 250px;
+        transition: all 0.5s;
+      
+}

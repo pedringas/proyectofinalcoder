@@ -33,6 +33,14 @@
   justify-content: space-evenly;
 }
 
+.fondocard-carnet, .fondocard-energy, .fondocard-pet, .fondocard-11, .fondocard-cbn {
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  height: 250px;
+  transition: all 0.5s;
+}
+
 header {
   background: no-repeat center cover relative;
   height: 500px;
@@ -151,6 +159,9 @@ body h1 {
   color: white;
   font-size: x-large;
 }
+body h2 {
+  font-family: monument;
+}
 body h4 {
   color: #d4ddd8;
   font-family: axiforma;
@@ -218,6 +229,14 @@ body p {
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.fondocard-carnet, .fondocard-energy, .fondocard-pet, .fondocard-11, .fondocard-cbn {
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  height: 250px;
+  transition: all 0.5s;
 }
 
 footer {
@@ -296,6 +315,14 @@ footer ul {
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.fondocard-carnet, .fondocard-energy, .fondocard-pet, .fondocard-11, .fondocard-cbn {
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  height: 250px;
+  transition: all 0.5s;
 }
 
 @media (max-width: 700px) {
@@ -463,14 +490,25 @@ main a:hover {
 
 .card {
   align-content: center;
+  border: none;
+  border-radius: 10px;
+}
+
+.card2 {
+  align-content: center;
 }
 
 .card-body a {
   color: #d4ddd8;
   transition: all 0.5s;
+  margin: 0px;
 }
 .card-body a:hover {
   color: #FCB631;
+}
+
+.card-body {
+  padding: 10px;
 }
 
 /*producto*/
@@ -496,11 +534,56 @@ main a:hover {
 
 .card {
   background-color: #21412E;
+  margin-top: 20px;
+  box-shadow: 10px 5px 5px #232c23;
+}
+
+.fondocard-cbn {
+  background-image: url(../img/CBN\ +\ VALERIANA.jpg);
+}
+.fondocard-cbn:hover {
+  background-image: url(../img/Nnabis\ 7CUADRADO\ cbn.jpg);
+}
+
+.fondocard-11 {
+  background-image: url(../img/Nnabis\ 4CUADRADO.jpg);
+}
+.fondocard-11:hover {
+  background-image: url(../img/Nnabis\ 4CUADRADO\ 1.1.jpg);
+}
+
+.fondocard-pet {
+  background-image: url(../img/GOLDEN\ PET.jpg);
+}
+.fondocard-pet:hover {
+  background-image: url(/img/nnabis\ pet.jpg);
+}
+
+.fondocard-energy {
+  background-image: url(../img/ENERGY\ SPORT.jpg);
+}
+.fondocard-energy:hover {
+  background-image: url(../img/Nnabis\ 6\ CUADRADO\ energy.jpg);
+}
+
+.fondocard-carnet {
+  background-image: url(../img/Editable\ reprocan.jpg);
+}
+.fondocard-carnet:hover {
+  background-image: url(../img/Editable\ reprocan\ atras.jpg);
 }
 
 .boton_comprar {
   margin: 2rem 0px;
   cursor: pointer;
+}
+
+.boton_comprar2 {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: flex-start;
 }
 
 .boton_comprar a {
@@ -512,7 +595,7 @@ main a:hover {
   transition: all 0.5s;
   border-style: solid;
   border-color: #FCB631;
-  border-width: 2px;
+  border-width: 1px;
   cursor: pointer;
 }
 .boton_comprar a:hover {
@@ -521,8 +604,42 @@ main a:hover {
   border-color: #21412E;
 }
 
+.boton_comprar2 a {
+  text-decoration: none;
+  text-align: center;
+  font-weight: lighter;
+  font-size: small;
+  background-color: #21412E;
+  padding: 5px 10px;
+  color: #FCB631;
+  transition: all 0.5s;
+  border-style: solid;
+  border-color: #FCB631;
+  border-width: 1px;
+  cursor: pointer;
+}
+.boton_comprar2 a:hover {
+  color: #21412E;
+  background-color: #FCB631;
+  border-color: #21412E;
+}
+
 .espacio {
   height: 20px;
+}
+
+.subtitulotienda h3 {
+  font-family: monument;
+  color: white;
+}
+
+.subtitulotienda {
+  border-bottom: 2px solid black;
+  margin-top: 50px;
+}
+
+.row > * {
+  padding: 0px;
 }
 
 /*galeria de imagenes*/
@@ -671,7 +788,7 @@ input[type=reset]:hover {
   justify-content: center;
   margin-top: 2rem;
   color: #21412E;
-  font-weight: bolder;
+  font-family: monument;
   font-size: 30px;
   margin-bottom: 2rem;
 }
@@ -830,7 +947,7 @@ input[type=reset]:hover {
 .flip-card-front {
   background-color: #bbb;
   color: black;
-  box-shadow: 10px 5px 5px #21412E;
+  box-shadow: 10px 5px 5px #232c23;
 }
 
 /* Style the back side */
@@ -921,6 +1038,14 @@ footer, footer div, .flex__pr, .contenedor__galeria {
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.fondocard-cbn, .fondocard-11, .fondocard-pet, .fondocard-energy, .fondocard-carnet {
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  height: 250px;
+  transition: all 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
