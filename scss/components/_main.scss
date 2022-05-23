@@ -30,13 +30,16 @@
   }
 
 }
-@media screen and (max-width:600px){
+@media (max-width:600px){
   
  .img__quienes{
    display: none;
  }
  .tituloblog-index h2{
   font-size: 23px;
+}
+.textomanifiesto p{
+  padding: 0.5rem;
 }
 
 
