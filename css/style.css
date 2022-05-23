@@ -325,7 +325,7 @@ footer ul {
   transition: all 0.5s;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 770px) {
   .galeria__ {
     display: none;
   }
@@ -335,6 +335,10 @@ footer ul {
   }
 
   .manifiestotitulo2 {
+    display: none;
+  }
+
+  .imagencontacto {
     display: none;
   }
 }
@@ -347,10 +351,18 @@ footer ul {
   .img_mobile {
     display: none;
   }
+
+  .contactoindex {
+    display: block;
+  }
 }
 @media screen and (max-width: 600px) {
   .img__quienes {
     display: none;
+  }
+
+  .tituloblog-index h2 {
+    font-size: 23px;
   }
 }
 /*about*/
@@ -737,24 +749,23 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+/*input[type=submit] {
   padding: 12px 20px;
   border: none;
   cursor: pointer;
-  background-color: #21412E;
+  background-color: $nnabis1;
   padding: 15px;
-  color: #FCB631;
+  color: $nnabis2;
   font-weight: bolder;
   transition: all 0.5s;
   border-style: solid;
-  border-color: #FCB631;
+  border-color: $nnabis2;
   border-width: 3px;
-}
-input[type=submit]:hover {
-  background-color: #FCB631;
-  color: #21412E;
-}
-
+  &:hover {
+    background-color: $nnabis2;
+    color: $nnabis1;
+  }
+}*/
 input[type=reset] {
   padding: 12px 20px;
   border: none;
@@ -1004,6 +1015,62 @@ input[type=reset]:hover {
 .texto_man_index {
   justify-content: center;
   text-align: center;
+}
+
+/* CONTACTO */
+.contactoindex {
+  background-image: url(../img/Grupo\ 1750.png);
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.form_index {
+  align-items: center;
+}
+
+.form_container div {
+  width: 100%;
+  display: grid;
+  grid-auto-columns: 100%;
+  gap: 1em;
+}
+
+.form_input {
+  font-size: 1rem;
+  padding: 0.8em 1em;
+  outline: none;
+  border: none;
+  color: #d4ddd8;
+  border-bottom: solid 2px #d4ddd8;
+  background-color: transparent;
+}
+
+input[type=text] {
+  border: none;
+  border-bottom: solid 2px #d4ddd8;
+}
+
+input:active {
+  border-bottom: solid 2px #FCB631;
+}
+
+.form-input-message {
+  resize: none;
+}
+
+.imagencontacto img {
+  justify-content: center;
+  margin: 2rem;
+}
+
+.titulocontacto {
+  display: none;
+  font-size: 25px;
+  margin-bottom: 100px;
 }
 
 .hero-image-index, .hero-image-productos, .hero-image-manifiesto, .hero-image-galeria, .hero-image-contacto {

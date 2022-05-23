@@ -1,7 +1,7 @@
 @import "../base/variables";
 @import "../base/extends";
 
-@media (max-width:700px){
+@media (max-width:770px){
   .galeria__{
     display: none;
   } 
@@ -11,9 +11,12 @@
   .manifiestotitulo2{
     display: none;
   }
+  .imagencontacto{
+    display: none;
+  }
+  
 }
 @media (max-width:992px){
-
   .acordeonindex{
     display: none;
   }
@@ -22,13 +25,19 @@
   .img_mobile{
       display: none;
   } 
+  .contactoindex{
+    display: block;
+  }
 
 }
 @media screen and (max-width:600px){
-
+  
  .img__quienes{
    display: none;
  }
+ .tituloblog-index h2{
+  font-size: 23px;
+}
 
 
 }
@@ -416,7 +425,7 @@ input[type=text], select, textarea {
   }
   
   
-  input[type=submit] {
+  /*input[type=submit] {
     padding: 12px 20px;
     border: none;
     cursor: pointer;
@@ -432,7 +441,7 @@ input[type=text], select, textarea {
       background-color: $nnabis2;
       color: $nnabis1;
     }
-  }
+  }*/
 
   input[type=reset] {
     padding: 12px 20px;
@@ -702,4 +711,55 @@ input[type=text], select, textarea {
     text-align: center;
   }
 
+  /* CONTACTO */
+
+  .contactoindex{
+    background-image: url(../img/Grupo\ 1750.png);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form_index{
+    align-items: center;
+    
+  }
+  .form_container div{
+    width: 100%;
+    display: grid;
+    grid-auto-columns: 100%;
+    gap:1em;
+  }
+  .form_input{
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    color: $nnabis3;
+    border-bottom: solid 2px $nnabis3;
+    background-color: transparent;
+  }
+input[type=text]{
+  border: none;
+  border-bottom: solid 2px $nnabis3;
+}
+input:active{
+  border-bottom: solid 2px $nnabis2;
+}
+.form-input-message{
+    resize: none;
+  }
+.imagencontacto img{
+    justify-content: center;
+    margin:2rem;
+;
+  }
+.titulocontacto{
+  display: none;
+  font-size: 25px;
+  margin-bottom: 100px;
   
+}
