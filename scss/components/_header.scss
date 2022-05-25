@@ -17,9 +17,16 @@ header{
     @extend %headernnabis;
 }
 .hero-image-manifiesto{
-        background: url(../img/pexels-francesco-ungaro-1671324.jpg);
-        @extend %headernnabis;
+    background-image: url(../img/portada\ manifiesto.png);
+    height: 500px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    &:hover{
+        background-image: url(/img/portada\ manifiesto\ gris.png);
     }
+}
 .hero-image-galeria{
         background: url(../img/portada\ galeria.jpg); 
         @extend %headernnabis;

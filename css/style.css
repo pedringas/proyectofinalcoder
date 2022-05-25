@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.hero-image-contacto, .hero-image-galeria, .hero-image-manifiesto, .hero-image-productos, .hero-image-index {
+.hero-image-contacto, .hero-image-galeria, .hero-image-productos, .hero-image-index {
   background-size: cover;
   height: 500px;
   position: relative;
@@ -55,7 +55,15 @@ header {
 }
 
 .hero-image-manifiesto {
-  background: url(../img/pexels-francesco-ungaro-1671324.jpg);
+  background-image: url(../img/portada\ manifiesto.png);
+  height: 500px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+}
+.hero-image-manifiesto:hover {
+  background-image: url(/img/portada\ manifiesto\ gris.png);
 }
 
 .hero-image-galeria {
@@ -171,6 +179,7 @@ body h5 {
   font-family: monument;
   font-size: medium;
   color: white;
+  text-align: center;
 }
 body h6 {
   color: #d4ddd8;
@@ -197,7 +206,7 @@ body p {
   padding: 0;
 }
 
-.hero-image-index, .hero-image-productos, .hero-image-manifiesto, .hero-image-galeria, .hero-image-contacto {
+.hero-image-index, .hero-image-productos, .hero-image-galeria, .hero-image-contacto {
   background-size: cover;
   height: 500px;
   position: relative;
@@ -283,7 +292,7 @@ footer ul {
   background-color: #FCB631;
 }
 
-.hero-image-index, .hero-image-productos, .hero-image-manifiesto, .hero-image-galeria, .hero-image-contacto {
+.hero-image-index, .hero-image-productos, .hero-image-galeria, .hero-image-contacto {
   background-size: cover;
   height: 500px;
   position: relative;
@@ -402,12 +411,13 @@ main a:hover {
 .manifiesto__2 {
   margin-top: 2rem;
   padding: 1rem;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .manifiesto__texto {
-  text-align: justify;
+  text-align: center;
   color: white;
+  max-width: 400px;
 }
 
 .manifiesto__img1 {
@@ -415,10 +425,25 @@ main a:hover {
   align-items: center;
 }
 
+.manifiesto__img1 img {
+  width: 800px;
+}
+
 .manifiesto__img2 img {
   margin-left: 4rem;
   width: 450px;
   height: 100px;
+}
+
+#titulo-manifiesto {
+  color: #FCB631;
+  font-size: 30px;
+}
+
+.fondo-manifiesto {
+  background-image: url(../img/FONDO\ MANIFIESTO.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /*ACORDEON INDEX*/
@@ -504,12 +529,6 @@ main a:hover {
   align-items: center;
 }
 
-.card {
-  align-content: center;
-  border: none;
-  border-radius: 10px;
-}
-
 .card2 {
   align-content: center;
 }
@@ -525,18 +544,10 @@ main a:hover {
 
 .card-body {
   padding: 10px;
+  background-color: #21412E;
 }
 
 /*producto*/
-.section-producto {
-  background-position: 4rem;
-  background-color: #FCB631;
-  background-repeat: no-repeat;
-  height: auto;
-  width: auto;
-  padding: 10px;
-}
-
 #titulo-producto img {
   display: flex;
   justify-content: center;
@@ -549,6 +560,9 @@ main a:hover {
 }
 
 .card {
+  align-content: center;
+  border: none;
+  border-radius: 10px;
   background-color: #21412E;
   margin-top: 20px;
   box-shadow: 10px 5px 5px #232c23;
@@ -625,19 +639,19 @@ main a:hover {
   text-align: center;
   font-weight: lighter;
   font-size: small;
-  background-color: #21412E;
+  background-color: #d4ddd8;
   padding: 5px 10px;
-  color: #FCB631;
+  color: #21412E;
   transition: all 0.5s;
   border-style: solid;
-  border-color: #FCB631;
+  border-color: #d4ddd8;
   border-width: 1px;
   cursor: pointer;
 }
 .boton_comprar2 a:hover {
-  color: #21412E;
-  background-color: #FCB631;
-  border-color: #21412E;
+  color: #d4ddd8;
+  background-color: #21412E;
+  border-color: #d4ddd8;
 }
 
 .espacio {
@@ -791,18 +805,25 @@ input[type=reset]:hover {
 /*Index*/
 .section-producto {
   background-position: 4rem;
-  background-color: #FCB631;
+  background-color: #21412E;
   background-repeat: no-repeat;
   height: auto;
   width: auto;
   padding: 10px;
+  background-image: url(../img/elemento\ aire.png);
+  background-position-x: -30%;
+}
+
+.section-producto-permiso {
+  background-image: url(../img/elemento\ agua.png);
+  background-color: #FCB631;
 }
 
 #titulo-producto {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  color: #21412E;
+  color: #d4ddd8;
   font-family: monument;
   font-size: 30px;
   margin-bottom: 2rem;
@@ -1077,7 +1098,7 @@ input:active {
   margin-bottom: 100px;
 }
 
-.hero-image-index, .hero-image-productos, .hero-image-manifiesto, .hero-image-galeria, .hero-image-contacto {
+.hero-image-index, .hero-image-productos, .hero-image-galeria, .hero-image-contacto {
   background-size: cover;
   height: 500px;
   position: relative;

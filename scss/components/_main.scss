@@ -82,13 +82,16 @@ main{
     @extend %columnas;
     margin-top: 2rem;
     padding: 1rem;
-    justify-content: space-between;
+    justify-content: center;
+
   
   }
 .manifiesto__texto{
     @extend %columnas;
-    text-align: justify;
+    text-align: center;
     color: white;
+    max-width: 400px;
+
     
   }
   
@@ -97,6 +100,11 @@ main{
     justify-content: center;  
     align-items: center; 
     
+    
+  }
+  .manifiesto__img1 img{
+    width: 800px;
+    
   }
     
 .manifiesto__img2 img{
@@ -104,7 +112,15 @@ main{
     width: 450px;
     height: 100px;
   }
-  
+  #titulo-manifiesto{
+    color: $nnabis2;
+    font-size: 30px;
+  }
+  .fondo-manifiesto{
+    background-image: url(../img/FONDO\ MANIFIESTO.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
   /*ACORDEON INDEX*/
   .btnacordeon a{
     align-items: center;
@@ -179,11 +195,7 @@ main{
    align-items: center;
 
  }
- .card{
-   align-content: center;
-   border: none;
-   border-radius: 10px;
- }
+ 
  .card2{
   align-content: center;
  }
@@ -198,17 +210,11 @@ main{
  }
  .card-body{
    padding: 10px;
+   background-color: $nnabis1;
 
  }
   /*producto*/
-.section-producto{
-    background-position: 4rem;
-    background-color: $nnabis2;
-    background-repeat: no-repeat;
-    height:auto;
-    width:auto;
-    padding: 10px;
-  }
+
 
 #titulo-producto img{
     display: flex;
@@ -224,9 +230,12 @@ main{
   }
 
   .card{
-      background-color: $nnabis1;
-      margin-top: 20px;
-      box-shadow:  10px 5px 5px rgb(35, 44, 35);
+    align-content: center;
+    border: none;
+    border-radius: 10px;
+    background-color: $nnabis1;
+    margin-top: 20px;
+     box-shadow:  10px 5px 5px rgb(35, 44, 35);
   }
   .fondocard-cbn {
     background-image: url(../img/CBN\ +\ VALERIANA.jpg);
@@ -304,18 +313,18 @@ main{
     text-align: center;
     font-weight: lighter;
     font-size: small;
-    background-color: $nnabis1;
+    background-color: $nnabis3;
     padding: 5px 10px;
-    color: $nnabis2;
+    color: $nnabis1;
     transition: all 0.5s;
     border-style: solid;
-    border-color: $nnabis2;
+    border-color: $nnabis3;
     border-width: 1px;
     cursor: pointer;
         &:hover{
-        color: $nnabis1;
-        background-color: $nnabis2; 
-        border-color: $nnabis1;
+        color: $nnabis3;
+        background-color: $nnabis1; 
+        border-color: $nnabis3;
       
         }
   }
@@ -468,18 +477,24 @@ input[type=text], select, textarea {
 
 .section-producto{
     background-position: 4rem;
-    background-color: $nnabis2;
+    background-color: $nnabis1;
     background-repeat: no-repeat;
     height:auto;
     width:auto;
     padding: 10px;
-  }
+    background-image: url(../img/elemento\ aire.png);
+    background-position-x: -30%;
+    }
+  .section-producto-permiso{
+    background-image: url(../img/elemento\ agua.png);
+    background-color: $nnabis2;
+    }
 
 #titulo-producto{
     display: flex;
     justify-content:center;
     margin-top: 2rem;    
-    color: $nnabis1;
+    color: $nnabis3;
     font-family: monument;
     font-size: $fontnnabisT;
     margin-bottom: 2rem;
