@@ -99,6 +99,7 @@ main{
     @extend %columnas;
     justify-content: center;  
     align-items: center; 
+    margin-top: 5rem;
     
     
   }
@@ -177,6 +178,7 @@ main{
  }
 
  /* NOTICIAS */
+ 
  .tituloblog-index{
    @extend %displaycolumn;
    margin-top: 5rem;
@@ -193,6 +195,7 @@ main{
  }
  .blogindex{
    align-items: center;
+   padding: 1rem 2rem;
 
  }
  
@@ -209,9 +212,20 @@ main{
 
  }
  .card-body{
+  padding: 1rem;
+  background-color: $nnabis1;
+ }
+ .card-body2{
    padding: 10px;
    background-color: $nnabis1;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
 
+
+ }
+ .card-text2{
+   max-width: 400px;
  }
   /*producto*/
 
@@ -474,7 +488,14 @@ input[type=text], select, textarea {
   }
 
   /*Index*/
-
+.section-producto-index{
+  background-position: 4rem;
+  background-color: $nnabis2;
+  background-repeat: no-repeat;
+  height:auto;
+  width:auto;
+  padding: 10px;
+  }
 .section-producto{
     background-position: 4rem;
     background-color: $nnabis1;
