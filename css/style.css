@@ -57,18 +57,18 @@ header {
 
 .hero-image-manifiesto {
   background-image: url(../img/portada\ manifiesto.png);
-  height: 500px;
+  height: 600px;
   background-size: 80%;
   background-repeat: no-repeat;
   position: relative;
   background-position: center;
 }
 .hero-image-manifiesto:hover {
-  background-image: url(/img/portada\ manifiesto\ gris.png);
+  background-image: url(../img/portada\ manifiesto\ gris.png);
 }
 
 .hero-image-blog {
-  background: url(../img/portada\ blog.jpg);
+  background: url(../img/portada\ blog\ nueva.jpg);
 }
 
 .hero-image-contacto {
@@ -538,18 +538,19 @@ main a:hover {
   align-content: center;
 }
 
-.card-body a {
+.card-body2 a {
   color: #d4ddd8;
   transition: all 0.5s;
   margin: 0px;
 }
-.card-body a:hover {
+.card-body2 a:hover {
   color: #FCB631;
 }
 
 .card-body {
   padding: 1rem;
-  background-color: #21412E;
+  background-color: #1A3927;
+  border-radius: 10px;
 }
 
 .card-body2 {
@@ -580,7 +581,7 @@ main a:hover {
   align-content: center;
   border: none;
   border-radius: 10px;
-  background-color: #21412E;
+  background-color: #1A3927;
   margin-top: 20px;
   box-shadow: 10px 5px 5px #232c23;
 }
@@ -618,6 +619,15 @@ main a:hover {
 }
 .fondocard-carnet:hover {
   background-image: url(../img/Editable\ reprocan\ atras.jpg);
+}
+
+.fondocard-blog {
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  min-height: 300px;
+  border: 2px solid #1A3927;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .boton_comprar {
@@ -695,6 +705,11 @@ main a:hover {
   padding: 1rem;
   display: flex;
   justify-content: center;
+}
+
+.blog__ {
+  margin-top: 3rem;
+  padding: 1rem;
 }
 
 .galeria__imagenes {
@@ -849,10 +864,11 @@ input[type=reset]:hover {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  color: #d4ddd8;
+  color: #FCB631;
   font-family: monument;
   font-size: 30px;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .producto-index {

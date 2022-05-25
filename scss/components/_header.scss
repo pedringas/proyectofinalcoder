@@ -18,17 +18,17 @@ header{
 }
 .hero-image-manifiesto{
     background-image: url(../img/portada\ manifiesto.png);
-    height: 500px;
+    height: 600px;
     background-size: 80%;
     background-repeat: no-repeat;
     position: relative;
     background-position: center;
     &:hover{
-        background-image: url(/img/portada\ manifiesto\ gris.png);
+        background-image: url(../img/portada\ manifiesto\ gris.png);
     }
 }
 .hero-image-blog{
-        background: url(../img/portada\ blog.jpg); 
+        background: url(../img/portada\ blog\ nueva.jpg); 
         @extend %headernnabis;
       }
 .hero-image-contacto{

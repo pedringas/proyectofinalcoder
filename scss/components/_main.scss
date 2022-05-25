@@ -202,7 +202,7 @@ main{
  .card2{
   align-content: center;
  }
- .card-body a{
+ .card-body2 a{
    color: $nnabis3;
    transition: all 0.5s;
    margin: 0px;
@@ -213,7 +213,8 @@ main{
  }
  .card-body{
   padding: 1rem;
-  background-color: $nnabis1;
+  background-color: $nnabis4;
+  border-radius: 10px;
  }
  .card-body2{
    padding: 10px;
@@ -247,7 +248,7 @@ main{
     align-content: center;
     border: none;
     border-radius: 10px;
-    background-color: $nnabis1;
+    background-color: $nnabis4;
     margin-top: 20px;
      box-shadow:  10px 5px 5px rgb(35, 44, 35);
   }
@@ -287,7 +288,15 @@ main{
     background-image: url(../img/Editable\ reprocan\ atras.jpg);
   }
   }
-
+  .fondocard-blog {
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    min-height: 300px;
+    border: 2px solid $nnabis4;
+    border-radius: 10px 10px 10px 10px;
+   
+  }
 
 
 
@@ -363,6 +372,10 @@ main{
     padding: 1rem;
     display: flex;
     justify-content: center;
+  }
+  .blog__{
+    margin-top: 3rem;
+    padding: 1rem;
   }
   .galeria__imagenes{
     display: flex;
@@ -515,10 +528,11 @@ input[type=text], select, textarea {
     display: flex;
     justify-content:center;
     margin-top: 2rem;    
-    color: $nnabis3;
+    color: $nnabis2;
     font-family: monument;
     font-size: $fontnnabisT;
     margin-bottom: 2rem;
+    text-align: center;
     
   }
 .flex__pr{
