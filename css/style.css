@@ -38,7 +38,7 @@
   background-position: center;
   background-repeat: none;
   background-size: cover;
-  height: 250px;
+  height: 100%;
   transition: all 0.5s;
 }
 
@@ -246,7 +246,7 @@ body p {
   background-position: center;
   background-repeat: none;
   background-size: cover;
-  height: 250px;
+  height: 100%;
   transition: all 0.5s;
 }
 
@@ -333,7 +333,7 @@ footer ul {
   background-position: center;
   background-repeat: none;
   background-size: cover;
-  height: 250px;
+  height: 100%;
   transition: all 0.5s;
 }
 
@@ -583,7 +583,7 @@ main a:hover {
   border-radius: 10px;
   background-color: #1A3927;
   margin-top: 20px;
-  box-shadow: 10px 5px 5px #232c23;
+  box-shadow: 5px 2.5px 2.5px #212521;
 }
 
 .fondocard-cbn {
@@ -647,7 +647,7 @@ main a:hover {
   text-decoration: none;
   text-align: center;
   background-color: #21412E;
-  padding: 8px 14px;
+  padding: 10px 15px;
   color: #FCB631;
   transition: all 0.5s;
   border-style: solid;
@@ -667,7 +667,7 @@ main a:hover {
   font-weight: lighter;
   font-size: small;
   background-color: #d4ddd8;
-  padding: 5px 10px;
+  padding: 10px 15px;
   color: #21412E;
   transition: all 0.5s;
   border-style: solid;
@@ -881,7 +881,7 @@ input[type=reset]:hover {
 
 .button3 {
   text-align: center;
-  padding: 5px 12px;
+  padding: 10px 15px;
   color: #21412E;
   background-color: #d4ddd8;
   margin-top: 40px;
@@ -900,7 +900,7 @@ input[type=reset]:hover {
 
 .button2 a {
   text-align: center;
-  padding: 5px 12px;
+  padding: 10px 15px;
   color: #21412E;
   transition: all 0.5s;
   font-family: axiforma-thin;
@@ -970,7 +970,7 @@ input[type=reset]:hover {
   background-color: #21412E;
   border: 2px solid #FCB631;
   width: 150px;
-  padding: 5px 12px;
+  padding: 10px 15px;
   margin-top: 2rem;
 }
 .boton__quienes a:hover {
@@ -1025,7 +1025,7 @@ input[type=reset]:hover {
 .flip-card-front {
   background-color: #bbb;
   color: black;
-  box-shadow: 10px 5px 5px #232c23;
+  box-shadow: 5px 2.5px 2.5px rgba(35, 44, 35, 0.541);
 }
 
 /* Style the back side */
@@ -1179,7 +1179,7 @@ footer, footer div, .flex__pr, .contenedor__galeria {
   background-position: center;
   background-repeat: none;
   background-size: cover;
-  height: 250px;
+  height: 100%;
   transition: all 0.5s;
 }
 
