@@ -40,3 +40,38 @@
         transition: all 0.5s;
       
 }
+
+%boton{
+    text-align: center;
+    padding: 10px 20px;
+    color: $nnabis1;
+    background-color: $nnabis3;
+    border-color: transparent;
+    align-items: center;
+    transition: all 0.5s;
+    font-family: axiforma-thin;
+    font-size: small;
+    &:hover{
+      color: $nnabis3;
+      background-color: $nnabis1;
+      border-color: $nnabis3;
+
+    }
+}
+
+%boton2{
+    text-align: center;
+    align-items:center;
+    justify-content: center;
+    color: $nnabis2;
+    transition: all 0.5s;
+    background-color: $nnabis1;
+    border: 2px solid $nnabis2;
+    width: 150px;
+    padding: 10px 20px;
+    margin-top: 2rem;
+    &:hover {
+      color: $nnabis1;
+      background-color: $nnabis2;
+    }
+}

@@ -234,8 +234,6 @@ main{
 #titulo-producto img{
     display: flex;
     justify-content:center;
-    margin-top: 2rem;    
-    margin-bottom: 2rem;
     
   }
 .flex__pr{
@@ -250,7 +248,7 @@ main{
     border-radius: 10px;
     background-color: $nnabis4;
     margin-top: 20px;
-     box-shadow:  5px 2.5px 2.5px rgb(33, 37, 33);
+    box-shadow:  5px 2.5px 2.5px rgb(33, 37, 33);
   }
   .fondocard-cbn {
     background-image: url(../img/CBN\ +\ VALERIANA.jpg);
@@ -298,15 +296,7 @@ main{
    
   }
 
-
-
-
-  .boton_comprar{
-    margin:2rem 0px;
-    cursor: pointer;
-  }
   .boton_comprar2{
-    
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -314,42 +304,10 @@ main{
     align-items: flex-start;
   }
   .boton_comprar a{
-    text-decoration: none;
-    text-align: center;
-    background-color: $nnabis1;
-    padding: 10px 15px;
-    color: $nnabis2;
-    transition: all 0.5s;
-    border-style: solid;
-    border-color: $nnabis2;
-    border-width: 1px;
-    cursor: pointer;
-        &:hover{
-        color: $nnabis1;
-        background-color: $nnabis2; 
-        border-color: $nnabis1;
-      
-        }
+    @extend %boton2;
   }
   .boton_comprar2 a{
-    text-decoration: none;
-    text-align: center;
-    font-weight: lighter;
-    font-size: small;
-    background-color: $nnabis3;
-    padding: 10px 15px;
-    color: $nnabis1;
-    transition: all 0.5s;
-    border-style: solid;
-    border-color: $nnabis3;
-    border-width: 1px;
-    cursor: pointer;
-        &:hover{
-        color: $nnabis3;
-        background-color: $nnabis1; 
-        border-color: $nnabis3;
-      
-        }
+    @extend %boton;
   }
   .espacio{
     height: 20px;
@@ -540,50 +498,23 @@ input[type=text], select, textarea {
   }
 .producto-index{
     @extend %columnas;
-    justify-content: space-around
+    justify-content: space-around;
+    padding: 1.5rem;
   }
 .centrado{
     @extend %displaycolumn;
     margin: auto;
   }
-.button3{
-    text-align: center;
-    padding: 10px 15px;
-    color: $nnabis1;
-    background-color: $nnabis3;
-    margin-top: 40px;
-    border-color: transparent;
-    margin-bottom: 40px;
-    align-items: center;
-    transition: all 0.5s;
-    font-family: axiforma-thin;
-    font-size: small;
-    &:hover{
-      color: $nnabis3;
-      background-color: $nnabis1;
-      border-color: $nnabis3;
-
-    }
-  }        
-.button2 a{
-    text-align: center;
-    padding: 10px 15px;
-    color: $nnabis1;
-    transition: all 0.5s;
-    font-family: axiforma-thin;
-    font-size: medium;
-    background-color: $nnabis3;
-    &:hover {
-      color: $nnabis3;
-      background-color: $nnabis1;
-
-    }
-    
+       
+.button2 a, .button2 input{
+  @extend %boton;
   }  
-  .button2{
+.button2{
     display: flex;
     justify-content: center;
+    
   }
+
  
   .galeria{
     @extend %columnas;
@@ -591,12 +522,13 @@ input[type=text], select, textarea {
     justify-content: center;
   }
   .fondo__galeria{
-    width: 1290px;
-    height: 280px;
+    height: 250px;
   }
   .contenedor__galeria{
     background-image: url(../img/portada\ galeria.jpg);
     width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
     @extend %disposicionfooter;
     justify-content: space-around;
   }
@@ -614,10 +546,7 @@ input[type=text], select, textarea {
 
    
   }
-  .titulo-q{
-    @extend %columnas;
-    
-  }
+
   .text-q{
     @extend %columnas;
     justify-content: flex-start;
@@ -641,21 +570,7 @@ input[type=text], select, textarea {
 
   .boton__quienes a{
     @extend %columnas;
-    align-items:center;
-    justify-content: center;
-    color: $nnabis2;
-    
-    transition: all 0.5s;
-    background-color: $nnabis1;
-    border: 2px solid $nnabis2;
-    width: 150px;
-    padding: 10px 15px;
-    margin-top: 2rem;
-    &:hover {
-      color: $nnabis1;
-      background-color: $nnabis2;
-    }
-  
+    @extend %boton2;
   }
   .quienesindex{
     height: 200px;
@@ -702,7 +617,7 @@ input[type=text], select, textarea {
   .flip-card-front {
     background-color: #bbb;
     color: black;
-    box-shadow:  5px 2.5px 2.5px rgba(35, 44, 35, 0.541);
+    box-shadow:  5px 2.5px 2.5px rgb(33, 37, 33);
   }
   
   /* Style the back side */
@@ -811,7 +726,7 @@ input:active{
 ;
   }
 .titulocontacto{
-  display: none;
+  display: flex;
   font-size: 25px;
   margin-bottom: 100px;
   
