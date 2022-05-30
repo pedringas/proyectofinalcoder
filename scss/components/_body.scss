@@ -69,15 +69,16 @@ body{
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: $nnabis2; /* Set a background color */
+    background-color: $nnabis1; /* Set a background color */
     color: $nnabis1; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 10px 15px; /* Some padding */
     transition: all 0.5s;
     border-radius: 100px; /* Rounded corners */
+    border: solid 1px $nnabis2;
   }
   
   #myBtn:hover {
-    background-color: $nnabis1; /* Add a dark-grey background on hover */
+    background-color: $nnabis2; /* Add a dark-grey background on hover */
     border: solid 1px $nnabis2;
   }

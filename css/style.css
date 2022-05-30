@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .hero-image-post1, .hero-image-blog, .hero-image-productos, .hero-image-index {
   background-size: cover;
-  height: 600px;
+  min-height: 400px;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -103,10 +103,6 @@ header {
 
 .hero-image-blog {
   background: url(../img/portada\ blog\ nueva.jpg);
-}
-
-.hero-image-post1 {
-  background: url(/img/cannabis\ receta\ personal\ medico\ medicina\ aceite.jpg);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -260,7 +256,7 @@ body p {
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: #FCB631;
+  background-color: #21412E;
   /* Set a background color */
   color: #21412E;
   /* Text color */
@@ -271,17 +267,18 @@ body p {
   transition: all 0.5s;
   border-radius: 100px;
   /* Rounded corners */
+  border: solid 1px #FCB631;
 }
 
 #myBtn:hover {
-  background-color: #21412E;
+  background-color: #FCB631;
   /* Add a dark-grey background on hover */
   border: solid 1px #FCB631;
 }
 
 .hero-image-index, .hero-image-productos, .hero-image-blog, .hero-image-post1 {
   background-size: cover;
-  height: 600px;
+  min-height: 400px;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -402,7 +399,7 @@ footer ul {
 
 .hero-image-index, .hero-image-productos, .hero-image-blog, .hero-image-post1 {
   background-size: cover;
-  height: 600px;
+  min-height: 400px;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -1215,8 +1212,8 @@ input:active {
 }
 
 .banner-blog {
-  background-color: white;
-  height: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 .body-blog {
@@ -1235,9 +1232,63 @@ input:active {
   border-top-right-radius: calc(0.25rem - 1px);
 }
 
+.subtitulo-blog h4 {
+  font-size: 20px;
+}
+
+.subtitulo-blog {
+  border-bottom: 1px solid #FCB631;
+  margin-top: 5rem;
+}
+
+.banner {
+  width: 20em;
+  background: #FCB631;
+  height: 5em;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  border-radius: 0.3em;
+}
+.banner:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px 10px rgba(0, 0, 0, 0.55);
+}
+
+.shopping-image {
+  height: auto;
+  width: 10em;
+}
+.shopping-image > img {
+  height: 5em;
+  width: 10em;
+  object-fit: cover;
+  border-radius: 0 2em 2em 0/0 3em 3em 0;
+  box-shadow: 3px 5px 1px 3px #c48103;
+}
+
+.text {
+  height: 5em;
+  width: 10em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.text > * {
+  font-size: 15px;
+  text-align: center;
+}
+
+.text h4, .text p {
+  color: #21412E;
+}
+
 .hero-image-index, .hero-image-productos, .hero-image-blog, .hero-image-post1 {
   background-size: cover;
-  height: 600px;
+  min-height: 400px;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;

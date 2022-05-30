@@ -756,8 +756,8 @@ input:active{
   
 }
 .banner-blog{
-  background-color:white;
-   height:200px;
+  display: flex;
+  justify-content: center;
 }
 
 .body-blog{
@@ -765,6 +765,7 @@ input:active{
   flex-direction: column;
    align-items: center;
 }
+
 .card-blog{
   margin: 0px .5rem;
 
@@ -775,4 +776,62 @@ input:active{
   width: 100%;
   border-top-left-radius: calc(.25rem - 1px);
   border-top-right-radius: calc(.25rem - 1px);
+}
+
+.subtitulo-blog h4{
+  font-size: 20px;
+}
+.subtitulo-blog{
+    border-bottom: 1px solid $nnabis2;
+    margin-top: 5rem;
+}
+
+
+
+
+
+.banner {
+	width: $banner-width;
+	background: $nnabis2;
+	height: $banner-height;
+	overflow: hidden;
+	display: flex;
+	justify-content: flex-start;
+  
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+	cursor: pointer;
+	border-radius: .3em;
+	
+	&:hover {
+		transform: scale(1.05);
+		box-shadow: 0 5px 15px 10px rgba(0, 0, 0, 0.55);
+	}
+}
+
+.shopping-image {
+	height: auto;
+	width: $banner-width / 2;
+	> img {
+		height: $banner-height;
+		width: $banner-width / 2;
+		object-fit: cover;
+		border-radius: 0 2em 2em 0 / 0 3em 3em 0;
+		box-shadow: 3px 5px 1px 3px darken($nnabis2, 20%);
+	}
+}
+
+.text {
+	height: $banner-height;
+	width: $banner-width / 2;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+  flex-direction: column;
+	> * {
+			font-size: 15px;
+			text-align: center;
+	}
+}
+.text h4, .text p{
+  color: $nnabis1;
 }
