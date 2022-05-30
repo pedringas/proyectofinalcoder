@@ -731,3 +731,48 @@ input:active{
   margin-bottom: 100px;
   
 }
+
+.texto-blog p{
+  font-size: 1.25rem;
+  margin: 1.25rem 0px;
+}
+.texto-blog h3{
+  color: $nnabis3;
+}
+.texto-blog h5{
+  color: $nnabis3;
+  text-align: start;
+  margin: 2rem 0rem;
+  font-family: axiforma;
+  font-size: 1.5rem;
+}
+.texto-blog li{
+  margin: .5rem 0rem;;
+}
+
+.texto-blog{
+  margin: 2.5rem 0px;
+  word-spacing: 5px;
+  
+}
+.banner-blog{
+  background-color:white;
+   height:200px;
+}
+
+.body-blog{
+  display: flex;
+  flex-direction: column;
+   align-items: center;
+}
+.card-blog{
+  margin: 0px .5rem;
+
+}
+
+
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+}

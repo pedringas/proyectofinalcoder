@@ -220,6 +220,10 @@ body h6 {
   color: #d4ddd8;
   font-family: axiforma-thin;
 }
+body li {
+  color: #d4ddd8;
+  font-size: 1.25rem;
+}
 
 body h2 {
   color: #d4ddd8;
@@ -1182,6 +1186,53 @@ input:active {
   display: flex;
   font-size: 25px;
   margin-bottom: 100px;
+}
+
+.texto-blog p {
+  font-size: 1.25rem;
+  margin: 1.25rem 0px;
+}
+
+.texto-blog h3 {
+  color: #d4ddd8;
+}
+
+.texto-blog h5 {
+  color: #d4ddd8;
+  text-align: start;
+  margin: 2rem 0rem;
+  font-family: axiforma;
+  font-size: 1.5rem;
+}
+
+.texto-blog li {
+  margin: 0.5rem 0rem;
+}
+
+.texto-blog {
+  margin: 2.5rem 0px;
+  word-spacing: 5px;
+}
+
+.banner-blog {
+  background-color: white;
+  height: 200px;
+}
+
+.body-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-blog {
+  margin: 0px 0.5rem;
+}
+
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
 }
 
 .hero-image-index, .hero-image-productos, .hero-image-blog, .hero-image-post1 {
