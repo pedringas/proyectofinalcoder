@@ -38,7 +38,7 @@
   background-position: center;
   background-repeat: none;
   background-size: cover;
-  height: 100%;
+  height: 310px;
   transition: all 0.5s;
 }
 
@@ -315,7 +315,7 @@ body p {
   background-position: center;
   background-repeat: none;
   background-size: cover;
-  height: 100%;
+  height: 310px;
   transition: all 0.5s;
 }
 
@@ -436,7 +436,7 @@ footer ul {
   background-position: center;
   background-repeat: none;
   background-size: cover;
-  height: 100%;
+  height: 310px;
   transition: all 0.5s;
 }
 
@@ -1325,7 +1325,7 @@ footer, footer div, .flex__pr, .contenedor__galeria {
   background-position: center;
   background-repeat: none;
   background-size: cover;
-  height: 100%;
+  height: 310px;
   transition: all 0.5s;
 }
 
