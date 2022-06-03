@@ -1286,6 +1286,14 @@ input:active {
   color: #21412E;
 }
 
+#linkblog {
+  color: #d4ddd8;
+  transition: all 0.5s;
+}
+#linkblog:hover {
+  color: #FCB631;
+}
+
 .hero-image-index, .hero-image-productos, .hero-image-blog, .hero-image-post1 {
   background-size: cover;
   min-height: 400px;

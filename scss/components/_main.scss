@@ -835,3 +835,11 @@ input:active{
 .text h4, .text p{
   color: $nnabis1;
 }
+
+#linkblog{
+  color: $nnabis3;
+  transition: all 0.5s;
+  &:hover{
+    color: $nnabis2;
+  }
+}
