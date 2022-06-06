@@ -525,20 +525,6 @@ main h2 {
 main p {
   color: #d4ddd8;
 }
-main a {
-  padding: 15px;
-  margin-top: 30px;
-  font-weight: bolder;
-  transition: all 0.5s;
-  background-color: #21412E;
-  font-family: axiforma;
-  border: 2px solid #FCB631;
-  color: #FCB631;
-}
-main a:hover {
-  background-color: #FCB631;
-  color: #21412E;
-}
 
 .about {
   display: flex;
@@ -1222,6 +1208,12 @@ input:active {
   align-items: center;
 }
 
+.body-blog div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .card-blog {
   margin: 0px 0.5rem;
 }
@@ -1287,11 +1279,11 @@ input:active {
 }
 
 #linkblog {
-  color: #d4ddd8;
+  color: #FCB631;
   transition: all 0.5s;
 }
 #linkblog:hover {
-  color: #FCB631;
+  color: #d4ddd8;
 }
 
 .hero-image-index, .hero-image-productos, .hero-image-blog, .hero-image-post1 {

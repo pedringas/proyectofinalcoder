@@ -55,20 +55,6 @@ main{
     p{
         color: $nnabis3;
     }
-    a{
-        padding: 15px;
-        margin-top: 30px;
-        font-weight: bolder;
-        transition: all 0.5s;
-        background-color: $nnabis1;
-        font-family: axiforma;
-        border: 2px solid $nnabis2;
-        color: $nnabis2;
-        &:hover{
-            background-color: $nnabis2;    
-            color: $nnabis1; 
-        }
-    }
 }
 .about{
     display: flex;
@@ -765,6 +751,11 @@ input:active{
   flex-direction: column;
    align-items: center;
 }
+.body-blog div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .card-blog{
   margin: 0px .5rem;
@@ -837,9 +828,9 @@ input:active{
 }
 
 #linkblog{
-  color: $nnabis3;
+  color: $nnabis2;
   transition: all 0.5s;
   &:hover{
-    color: $nnabis2;
+    color: $nnabis3 ;
   }
 }
