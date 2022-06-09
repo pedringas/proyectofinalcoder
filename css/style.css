@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .hero-image-post1, .hero-image-blog, .hero-image-productos, .hero-image-index {
   background-size: cover;
-  min-height: 400px;
+  height: 500px;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,15 +47,34 @@
   padding: 10px 20px;
   color: #21412E;
   background-color: #d4ddd8;
-  border-color: transparent;
+  border: solid 2px #d4ddd8;
   align-items: center;
   transition: all 0.5s;
   font-family: axiforma-thin;
   font-size: small;
+  margin: 20px 5px;
 }
 .button2 a:hover, .button2 input:hover, .boton_comprar2 a:hover {
   color: #d4ddd8;
   background-color: #21412E;
+  border-color: #d4ddd8;
+}
+
+#btnproducto {
+  text-align: center;
+  padding: 10px 20px;
+  color: #d4ddd8;
+  background-color: transparent;
+  border: solid 2px #d4ddd8;
+  align-items: center;
+  transition: all 0.5s;
+  font-family: axiforma-thin;
+  font-size: small;
+  margin: 20px 5px;
+}
+#btnproducto:hover {
+  color: #21412E;
+  background-color: #d4ddd8;
   border-color: #d4ddd8;
 }
 
@@ -78,7 +97,6 @@
 
 header {
   background: no-repeat center cover relative;
-  height: 500px;
 }
 
 .hero-image-index {
@@ -278,7 +296,7 @@ body p {
 
 .hero-image-index, .hero-image-productos, .hero-image-blog, .hero-image-post1 {
   background-size: cover;
-  min-height: 400px;
+  height: 500px;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -324,15 +342,34 @@ body p {
   padding: 10px 20px;
   color: #21412E;
   background-color: #d4ddd8;
-  border-color: transparent;
+  border: solid 2px #d4ddd8;
   align-items: center;
   transition: all 0.5s;
   font-family: axiforma-thin;
   font-size: small;
+  margin: 20px 5px;
 }
 .button2 a:hover, .button2 input:hover, .boton_comprar2 a:hover {
   color: #d4ddd8;
   background-color: #21412E;
+  border-color: #d4ddd8;
+}
+
+#btnproducto {
+  text-align: center;
+  padding: 10px 20px;
+  color: #d4ddd8;
+  background-color: transparent;
+  border: solid 2px #d4ddd8;
+  align-items: center;
+  transition: all 0.5s;
+  font-family: axiforma-thin;
+  font-size: small;
+  margin: 20px 5px;
+}
+#btnproducto:hover {
+  color: #21412E;
+  background-color: #d4ddd8;
   border-color: #d4ddd8;
 }
 
@@ -399,7 +436,7 @@ footer ul {
 
 .hero-image-index, .hero-image-productos, .hero-image-blog, .hero-image-post1 {
   background-size: cover;
-  min-height: 400px;
+  height: 500px;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -445,15 +482,34 @@ footer ul {
   padding: 10px 20px;
   color: #21412E;
   background-color: #d4ddd8;
-  border-color: transparent;
+  border: solid 2px #d4ddd8;
   align-items: center;
   transition: all 0.5s;
   font-family: axiforma-thin;
   font-size: small;
+  margin: 20px 5px;
 }
 .button2 a:hover, .button2 input:hover, .boton_comprar2 a:hover {
   color: #d4ddd8;
   background-color: #21412E;
+  border-color: #d4ddd8;
+}
+
+#btnproducto {
+  text-align: center;
+  padding: 10px 20px;
+  color: #d4ddd8;
+  background-color: transparent;
+  border: solid 2px #d4ddd8;
+  align-items: center;
+  transition: all 0.5s;
+  font-family: axiforma-thin;
+  font-size: small;
+  margin: 20px 5px;
+}
+#btnproducto:hover {
+  color: #21412E;
+  background-color: #d4ddd8;
   border-color: #d4ddd8;
 }
 
@@ -747,14 +803,13 @@ main p {
   background-repeat: none;
   background-size: cover;
   min-height: 300px;
-  border: 2px solid #1A3927;
   border-radius: 10px 10px 10px 10px;
 }
 
 .boton_comprar2 {
   cursor: pointer;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
   align-items: flex-start;
 }
@@ -1286,9 +1341,55 @@ input:active {
   color: #d4ddd8;
 }
 
+.texto-producto {
+  padding: 10px;
+  max-width: 100%;
+  text-align: start;
+}
+
+.texto-producto h3 {
+  color: #d4ddd8;
+  font-family: monument;
+}
+
+.texto-producto h1 {
+  text-align: start;
+  margin: 2rem 0rem;
+}
+
+#btnproducto1 {
+  text-align: center;
+  padding: 20px 100px;
+  color: #d4ddd8;
+  background-color: transparent;
+  border: solid 2px #d4ddd8;
+  align-items: center;
+  transition: all 0.5s;
+  font-family: axiforma-thin;
+  font-size: small;
+}
+#btnproducto1:hover {
+  color: #21412E;
+  background-color: #d4ddd8;
+  border-color: #d4ddd8;
+}
+
+.zoom {
+  transition: transform 0.5s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5);
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
 .hero-image-index, .hero-image-productos, .hero-image-blog, .hero-image-post1 {
   background-size: cover;
-  min-height: 400px;
+  height: 500px;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -1334,15 +1435,34 @@ footer, footer div, .flex__pr, .contenedor__galeria {
   padding: 10px 20px;
   color: #21412E;
   background-color: #d4ddd8;
-  border-color: transparent;
+  border: solid 2px #d4ddd8;
   align-items: center;
   transition: all 0.5s;
   font-family: axiforma-thin;
   font-size: small;
+  margin: 20px 5px;
 }
 .boton_comprar2 a:hover, .button2 a:hover, .button2 input:hover {
   color: #d4ddd8;
   background-color: #21412E;
+  border-color: #d4ddd8;
+}
+
+#btnproducto {
+  text-align: center;
+  padding: 10px 20px;
+  color: #d4ddd8;
+  background-color: transparent;
+  border: solid 2px #d4ddd8;
+  align-items: center;
+  transition: all 0.5s;
+  font-family: axiforma-thin;
+  font-size: small;
+  margin: 20px 5px;
+}
+#btnproducto:hover {
+  color: #21412E;
+  background-color: #d4ddd8;
   border-color: #d4ddd8;
 }
 
