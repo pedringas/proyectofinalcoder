@@ -120,4 +120,20 @@ header{
         left: 50%;
         transform: translate(-50%, -50%);
         color: $nnabis3;
-      }    
+}    
+
+.breadcrumb{
+    justify-content: center;
+}
+.breadcrumb-item a{
+    font-family: axiforma;
+    color: $nnabis3;
+    &:hover{
+        color: $nnabis2;
+        
+    }
+}
+#breadcrumbactive{
+    font-family: axiforma-medium;
+    color: $nnabis2;
+}

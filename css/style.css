@@ -205,6 +205,23 @@ header {
   color: #d4ddd8;
 }
 
+.breadcrumb {
+  justify-content: center;
+}
+
+.breadcrumb-item a {
+  font-family: axiforma;
+  color: #d4ddd8;
+}
+.breadcrumb-item a:hover {
+  color: #FCB631;
+}
+
+#breadcrumbactive {
+  font-family: axiforma-medium;
+  color: #FCB631;
+}
+
 body {
   background-color: #21412E;
   font-family: axiforma;

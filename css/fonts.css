@@ -18,3 +18,8 @@
     font-family: luimp;
     src: url(../fonts/Luimp\ Light.otf);
 }
+
+@font-face {
+    font-family: axiforma-medium;
+    src: url(../fonts/Kastelov\ -\ Axiforma\ Medium\ Italic.otf);
+}
