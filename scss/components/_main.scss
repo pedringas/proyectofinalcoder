@@ -274,15 +274,13 @@ main{
   }
   .fondocard-blog {
     background-position: center;
-    background-repeat: none;
+    background-repeat:no-repeat;
     background-size: cover;
     min-height: 300px;
     border-radius: 10px 10px 10px 10px;
-   
   }
 
   .boton_comprar2{
-    cursor: pointer;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -800,10 +798,10 @@ input:active{
 
 .shopping-image {
 	height: auto;
-	width: $banner-width / 2;
+	width: 10em;
 	> img {
 		height: $banner-height;
-		width: $banner-width / 2;
+		width: 10em;
 		object-fit: cover;
 		border-radius: 0 2em 2em 0 / 0 3em 3em 0;
 		box-shadow: 3px 5px 1px 3px darken($nnabis2, 20%);
@@ -812,7 +810,7 @@ input:active{
 
 .text {
 	height: $banner-height;
-	width: $banner-width / 2;
+	width: 10em;
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -869,6 +867,7 @@ input:active{
 
   }
 }
+
 
 .zoom {
   transition: transform .5s;

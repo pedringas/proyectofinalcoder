@@ -34,7 +34,7 @@
 
 %card{
   background-position: center;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 310px;
   transition: all 0.5s;
@@ -64,7 +64,7 @@
   color: $nnabis3;
   background-color: transparent;
   border: solid 2px $nnabis3;
-  align-items: center;
+  align-items: flex-start;
   transition: all 0.5s;
   font-family: axiforma-thin;
   font-size: small;
