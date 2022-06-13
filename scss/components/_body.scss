@@ -82,3 +82,13 @@ body{
     background-color: $nnabis2; /* Add a dark-grey background on hover */
     border: solid 1px $nnabis2;
   }
+
+  .navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-sm,
+.navbar > .container-md,
+.navbar > .container-lg,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+    max-width: 1200px;
+}
