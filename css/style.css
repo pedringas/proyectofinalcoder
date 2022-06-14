@@ -739,6 +739,9 @@ main p {
   align-items: center;
   padding: 1rem 2rem;
 }
+.blogindex .blogindex a:hover {
+  background-image: url(../../img/blog/deportes\ 1.jpg);
+}
 
 .card2 {
   align-content: center;
@@ -1423,7 +1426,6 @@ input:active {
   border: 1px solid #313131;
   background: #1A3927;
   color: #fff;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   border-radius: 27px;
   transition: all 0.05s ease-in-out;
 }
@@ -1561,6 +1563,29 @@ a.buy-btn:hover, a.buy-btn:active, a.buy-btn:focus {
     margin-top: 0px;
   }
 }
+.postinteres h5 {
+  color: #d4ddd8;
+}
+.postinteres h5:hover {
+  color: #FCB631;
+}
+
+.hover08 figure img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hover08 figure:hover img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%) opacity(0.5) drop-shadow(#8ee1af 0 0 0);
+}
+
+figure {
+  margin: 0px;
+}
+
 .hero-image-index, .hero-image-productos, .hero-image-blog, .hero-image-post1 {
   background-size: cover;
   height: 500px;
