@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .hero-image-post1, .hero-image-blog, .hero-image-productos, .hero-image-index {
   background-size: cover;
-  height: 500px;
+  height: 600px;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -321,9 +321,15 @@ body p {
   max-width: 1200px;
 }
 
+::selection {
+  background: #d4ddd8;
+  color: #21412E;
+  text-shadow: 1px 1px #fff;
+}
+
 .hero-image-index, .hero-image-productos, .hero-image-blog, .hero-image-post1 {
   background-size: cover;
-  height: 500px;
+  height: 600px;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -463,7 +469,7 @@ footer ul {
 
 .hero-image-index, .hero-image-productos, .hero-image-blog, .hero-image-post1 {
   background-size: cover;
-  height: 500px;
+  height: 600px;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -1586,9 +1592,21 @@ figure {
   margin: 0px;
 }
 
+.hover08 h2 {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hover08:hover h2 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%) opacity(0.5) drop-shadow(#8ee1af 0 0 0);
+}
+
 .hero-image-index, .hero-image-productos, .hero-image-blog, .hero-image-post1 {
   background-size: cover;
-  height: 500px;
+  height: 600px;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;

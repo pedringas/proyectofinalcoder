@@ -92,3 +92,9 @@ body{
 .navbar > .container-xxl {
     max-width: 1200px;
 }
+
+::selection {
+    background: $nnabis3;
+    color: $nnabis1;
+    text-shadow: 1px 1px #fff;
+}
