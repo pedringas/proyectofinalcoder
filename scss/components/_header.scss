@@ -16,6 +16,14 @@ header{
     background: url(../img/Componente\ 34\ –\ 1.png);
     @extend %headernnabis;
 }
+.hero-image-pf{
+    @extend %headernnabis;
+}
+.titulo-pf h1{
+    color: $nnabis4;
+    font-size: 10vw;
+    font-family: luimp;
+}
 .hero-image-manifiesto{
     background-image: url(../img/portada\ manifiesto.png);
     height: 600px;
@@ -30,7 +38,7 @@ header{
 .hero-image-blog{
         background: url(../img/portada\ blog\ nueva.jpg); 
         @extend %headernnabis;
-      }
+    }
 .hero-image-post1{
         @extend %headernnabis;
     }
@@ -103,12 +111,12 @@ header{
                 
             color:$nnabis2;
         }  
-  
-       
+}      
 }
-
-    
-    
+@media only screen and (max-width: 500px){
+    .titulo-pf h1{
+        font-size: 16vw; 
+}      
 }
 .hero-text{
     flex-direction: column;
@@ -136,4 +144,8 @@ header{
 #breadcrumbactive{
     font-family: axiforma-medium;
     color: $nnabis2;
+}
+
+.row{
+    --bs-gutter-x: 0px;
 }

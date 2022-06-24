@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.hero-image-post1, .hero-image-blog, .hero-image-productos, .hero-image-index {
+.hero-image-post1, .hero-image-blog, .hero-image-pf, .hero-image-productos, .hero-image-index {
   background-size: cover;
   height: 600px;
   position: relative;
@@ -107,6 +107,12 @@ header {
   background: url(../img/Componente\ 34\ –\ 1.png);
 }
 
+.titulo-pf h1 {
+  color: #1A3927;
+  font-size: 10vw;
+  font-family: luimp;
+}
+
 .hero-image-manifiesto {
   background-image: url(../img/portada\ manifiesto.png);
   height: 600px;
@@ -193,6 +199,11 @@ header {
     color: #FCB631;
   }
 }
+@media only screen and (max-width: 500px) {
+  .titulo-pf h1 {
+    font-size: 16vw;
+  }
+}
 .hero-text {
   flex-direction: column;
   align-items: center;
@@ -222,10 +233,15 @@ header {
   color: #FCB631;
 }
 
+.row {
+  --bs-gutter-x: 0px;
+}
+
 body {
   background-color: #21412E;
   font-family: axiforma;
   margin: 0px;
+  cursor: default;
 }
 body h1 {
   font-family: monument;
@@ -235,6 +251,11 @@ body h1 {
 }
 body h2 {
   font-family: monument;
+}
+body h3 {
+  font-family: monument;
+  font-size: medium;
+  color: white;
 }
 body h4 {
   color: #d4ddd8;
@@ -327,7 +348,7 @@ body p {
   text-shadow: 1px 1px #fff;
 }
 
-.hero-image-index, .hero-image-productos, .hero-image-blog, .hero-image-post1 {
+.hero-image-index, .hero-image-productos, .hero-image-pf, .hero-image-blog, .hero-image-post1 {
   background-size: cover;
   height: 600px;
   position: relative;
@@ -467,7 +488,7 @@ footer ul {
   background-color: #FCB631;
 }
 
-.hero-image-index, .hero-image-productos, .hero-image-blog, .hero-image-post1 {
+.hero-image-index, .hero-image-productos, .hero-image-pf, .hero-image-blog, .hero-image-post1 {
   background-size: cover;
   height: 600px;
   position: relative;
@@ -608,20 +629,6 @@ footer ul {
   }
 }
 /*about*/
-main h2 {
-  margin: 2rem;
-}
-main p {
-  color: #d4ddd8;
-}
-
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 10rem;
-}
-
 /*manifiesto*/
 .manifiesto__2 {
   margin-top: 2rem;
@@ -687,7 +694,6 @@ main p {
 }
 
 .accordion-button {
-  margin-top: -10px;
   background-color: transparent;
   color: #d4ddd8;
   border-bottom: 2px solid #d4ddd8;
@@ -1583,7 +1589,7 @@ a.buy-btn:hover, a.buy-btn:active, a.buy-btn:focus {
   transition: 0.3s ease-in-out;
 }
 
-.hover08 figure:hover img {
+.hover08 figure:hover img, .hover08 figure:hover {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%) opacity(0.5) drop-shadow(#8ee1af 0 0 0);
 }
@@ -1604,7 +1610,7 @@ figure {
   filter: grayscale(100%) opacity(0.5) drop-shadow(#8ee1af 0 0 0);
 }
 
-.hero-image-index, .hero-image-productos, .hero-image-blog, .hero-image-post1 {
+.hero-image-index, .hero-image-productos, .hero-image-pf, .hero-image-blog, .hero-image-post1 {
   background-size: cover;
   height: 600px;
   position: relative;

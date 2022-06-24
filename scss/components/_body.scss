@@ -3,6 +3,7 @@ body{
     background-color: $nnabis1;
     font-family: axiforma;
     margin: 0px;
+    cursor: default;
     h1{
         font-family: monument;
         text-align: center;
@@ -11,6 +12,12 @@ body{
     }
     h2{
         font-family: monument;
+    }
+    h3{
+        font-family: monument;
+        font-size: medium;
+        color: white;
+        
     }
     h4{
         color: $nnabis3;

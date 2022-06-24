@@ -48,20 +48,7 @@
 
 
 /*about*/
-main{
-    h2{
-        margin: 2rem;
-    }
-    p{
-        color: $nnabis3;
-    }
-}
-.about{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10rem;
-}
+
 
 /*manifiesto*/
 .manifiesto__2{
@@ -131,7 +118,6 @@ main{
     
   }
  .accordion-button{
-   margin-top: -10px;
    background-color: transparent;
    color: $nnabis3;
    border-bottom: 2px solid $nnabis3;
@@ -1030,7 +1016,7 @@ a.buy-btn:hover , a.buy-btn:active, a.buy-btn:focus{
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-.hover08 figure:hover img {
+.hover08 figure:hover img, .hover08 figure:hover {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%) opacity(0.5) drop-shadow(#8ee1af 0 0 0);
 }
