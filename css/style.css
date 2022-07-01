@@ -345,7 +345,6 @@ body p {
 ::selection {
   background: #d4ddd8;
   color: #21412E;
-  text-shadow: 1px 1px #fff;
 }
 
 .hero-image-index, .hero-image-productos, .hero-image-pf, .hero-image-blog, .hero-image-post1 {
