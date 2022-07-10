@@ -4,6 +4,9 @@ body{
     font-family: axiforma;
     margin: 0px;
     cursor: default;
+    body::-webkit-scrollbar-track {
+        background-color: $nnabis1;
+    }
     h1{
         font-family: monument;
         text-align: center;
