@@ -494,6 +494,8 @@ input[type=text], select, textarea {
   }
   .contenedor__galeria{
     background-image: url(../img/portada\ galeria.jpg);
+    background-attachment: fixed;
+    background-position: center;
     width: auto;
     background-size: cover;
     background-repeat: no-repeat;
