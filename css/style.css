@@ -95,6 +95,10 @@
   background-color: #FCB631;
 }
 
+.btn-close {
+  background-image: url(../img/xx.png);
+}
+
 header {
   background: no-repeat center cover relative;
 }
@@ -751,7 +755,6 @@ footer ul {
 
 .blogindex {
   align-items: center;
-  padding: 1rem 2rem;
 }
 .blogindex .blogindex a:hover {
   background-image: url(../../img/blog/deportes\ 1.jpg);
@@ -1067,6 +1070,8 @@ input[type=reset]:hover {
 
 .contenedor__galeria {
   background-image: url(../img/portada\ galeria.jpg);
+  background-attachment: fixed;
+  background-position: center;
   width: auto;
   background-size: cover;
   background-repeat: no-repeat;

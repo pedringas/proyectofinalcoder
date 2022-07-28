@@ -2,7 +2,9 @@
 @import "../base/mapa";
 @import "../base/extends";
 
-
+.btn-close{
+    background-image: url(../img/xx.png);
+}
 header{
     background: map-get($header , posicion );
     height: map-get($header, altura);
