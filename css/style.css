@@ -1617,6 +1617,13 @@ figure {
   filter: grayscale(100%) opacity(0.5) drop-shadow(#8ee1af 0 0 0);
 }
 
+#color-link {
+  color: #FCB631;
+}
+#color-link:hover {
+  color: #d4ddd8;
+}
+
 .hero-image-index, .hero-image-productos, .hero-image-pf, .hero-image-blog, .hero-image-post1 {
   background-size: cover;
   height: 600px;

@@ -1035,3 +1035,9 @@ figure{
 	filter: grayscale(100%) opacity(0.5) drop-shadow(#8ee1af 0 0 0);
 }
 
+#color-link{
+  color: $nnabis2;
+  &:hover{
+    color: $nnabis3;
+  }
+}
