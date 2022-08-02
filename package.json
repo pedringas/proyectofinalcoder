@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/pedringas/proyectofinalcoder/issues"
   },
-  "homepage": "https://github.com/pedringas/proyectofinalcoder#readme"
+  "homepage": "https://github.com/pedringas/proyectofinalcoder#readme",
+  "dependencies": {
+    "animejs": "^3.2.1"
+  }
 }
