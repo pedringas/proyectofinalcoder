@@ -42,14 +42,14 @@
 
 %boton{
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 0px;
     color: $nnabis1;
     background-color: $nnabis3;
     border: solid 2px $nnabis3;
     align-items: center;
     transition: all 0.5s;
-    font-family: axiforma-thin;
-    font-size: small;
+    font-family: axiforma;
+    font-size: medium;
     margin: 20px 5px;
     &:hover{
       color: $nnabis3;
@@ -60,14 +60,14 @@
 }
 %boton3{
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px 0px;
   color: $nnabis3;
   background-color: transparent;
   border: solid 2px $nnabis3;
   align-items: flex-start;
   transition: all 0.5s;
-  font-family: axiforma-thin;
-  font-size: small;
+  font-family: axiforma;
+  font-size: medium;
   margin: 20px 5px;
   &:hover{
     color: $nnabis1;

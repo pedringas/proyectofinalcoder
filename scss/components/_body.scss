@@ -36,7 +36,7 @@ body{
         
     h6 {
         color: $nnabis3;
-        font-family: axiforma-thin;
+        font-family: axiforma;
     }
     li{
         color: $nnabis3;
@@ -106,4 +106,8 @@ body{
 ::selection {
     background: $nnabis3;
     color: $nnabis1;
+}
+
+.row{
+    align-items: center
 }

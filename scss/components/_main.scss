@@ -273,6 +273,7 @@
     flex-direction: row;
     text-align: center;
     align-items: flex-start;
+    justify-content: flex-start;
   }
   .boton_comprar a{
     @extend %boton2;
@@ -793,7 +794,7 @@ input:active{
   border: solid 2px $nnabis3;
   align-items: center;
   transition: all 0.5s;
-  font-family: axiforma-thin;
+  font-family: axiforma;
   font-size: small;
   &:hover{
     color: $nnabis1;
@@ -943,14 +944,14 @@ input:active{
 .price{
   color: $nnabis3;
   font-size:18px;
-  font-family: axiforma-thin;
+  font-family: axiforma;
   font-weight:bold;
 }
 
 a.buy-btn{
   display:block;
   color: $nnabis3;
-  font-family: axiforma-thin;
+  font-family: axiforma;
   text-align:center;
   font-size: 18px;
   line-height:35px;

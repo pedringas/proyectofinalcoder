@@ -44,14 +44,14 @@
 
 .button2 a, .button2 input, .boton_comprar2 a {
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px 0px;
   color: #21412E;
   background-color: #d4ddd8;
   border: solid 2px #d4ddd8;
   align-items: center;
   transition: all 0.5s;
-  font-family: axiforma-thin;
-  font-size: small;
+  font-family: axiforma;
+  font-size: medium;
   margin: 20px 5px;
 }
 .button2 a:hover, .button2 input:hover, .boton_comprar2 a:hover {
@@ -62,14 +62,14 @@
 
 #btnproducto {
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px 0px;
   color: #d4ddd8;
   background-color: transparent;
   border: solid 2px #d4ddd8;
   align-items: flex-start;
   transition: all 0.5s;
-  font-family: axiforma-thin;
-  font-size: small;
+  font-family: axiforma;
+  font-size: medium;
   margin: 20px 5px;
 }
 #btnproducto:hover {
@@ -277,7 +277,7 @@ body h5 {
 }
 body h6 {
   color: #d4ddd8;
-  font-family: axiforma-thin;
+  font-family: axiforma;
 }
 body li {
   color: #d4ddd8;
@@ -354,6 +354,10 @@ body p {
   color: #21412E;
 }
 
+.row {
+  align-items: center;
+}
+
 .hero-image-index, .hero-image-productos, .hero-image-pf, .hero-image-blog, .hero-image-post1 {
   background-size: cover;
   height: 600px;
@@ -399,14 +403,14 @@ body p {
 
 .button2 a, .button2 input, .boton_comprar2 a {
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px 0px;
   color: #21412E;
   background-color: #d4ddd8;
   border: solid 2px #d4ddd8;
   align-items: center;
   transition: all 0.5s;
-  font-family: axiforma-thin;
-  font-size: small;
+  font-family: axiforma;
+  font-size: medium;
   margin: 20px 5px;
 }
 .button2 a:hover, .button2 input:hover, .boton_comprar2 a:hover {
@@ -417,14 +421,14 @@ body p {
 
 #btnproducto {
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px 0px;
   color: #d4ddd8;
   background-color: transparent;
   border: solid 2px #d4ddd8;
   align-items: flex-start;
   transition: all 0.5s;
-  font-family: axiforma-thin;
-  font-size: small;
+  font-family: axiforma;
+  font-size: medium;
   margin: 20px 5px;
 }
 #btnproducto:hover {
@@ -539,14 +543,14 @@ footer ul {
 
 .button2 a, .button2 input, .boton_comprar2 a {
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px 0px;
   color: #21412E;
   background-color: #d4ddd8;
   border: solid 2px #d4ddd8;
   align-items: center;
   transition: all 0.5s;
-  font-family: axiforma-thin;
-  font-size: small;
+  font-family: axiforma;
+  font-size: medium;
   margin: 20px 5px;
 }
 .button2 a:hover, .button2 input:hover, .boton_comprar2 a:hover {
@@ -557,14 +561,14 @@ footer ul {
 
 #btnproducto {
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px 0px;
   color: #d4ddd8;
   background-color: transparent;
   border: solid 2px #d4ddd8;
   align-items: flex-start;
   transition: all 0.5s;
-  font-family: axiforma-thin;
-  font-size: small;
+  font-family: axiforma;
+  font-size: medium;
   margin: 20px 5px;
 }
 #btnproducto:hover {
@@ -858,6 +862,7 @@ footer ul {
   flex-direction: row;
   text-align: center;
   align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .espacio {
@@ -1354,7 +1359,7 @@ input:active {
   border: solid 2px #d4ddd8;
   align-items: center;
   transition: all 0.5s;
-  font-family: axiforma-thin;
+  font-family: axiforma;
   font-size: small;
 }
 #btnproducto1:hover {
@@ -1515,14 +1520,14 @@ input:active {
 .price {
   color: #d4ddd8;
   font-size: 18px;
-  font-family: axiforma-thin;
+  font-family: axiforma;
   font-weight: bold;
 }
 
 a.buy-btn {
   display: block;
   color: #d4ddd8;
-  font-family: axiforma-thin;
+  font-family: axiforma;
   text-align: center;
   font-size: 18px;
   line-height: 35px;
@@ -1669,14 +1674,14 @@ footer, footer div, .flex__pr, .contenedor__galeria {
 
 .boton_comprar2 a, .button2 a, .button2 input {
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px 0px;
   color: #21412E;
   background-color: #d4ddd8;
   border: solid 2px #d4ddd8;
   align-items: center;
   transition: all 0.5s;
-  font-family: axiforma-thin;
-  font-size: small;
+  font-family: axiforma;
+  font-size: medium;
   margin: 20px 5px;
 }
 .boton_comprar2 a:hover, .button2 a:hover, .button2 input:hover {
@@ -1687,14 +1692,14 @@ footer, footer div, .flex__pr, .contenedor__galeria {
 
 #btnproducto {
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px 0px;
   color: #d4ddd8;
   background-color: transparent;
   border: solid 2px #d4ddd8;
   align-items: flex-start;
   transition: all 0.5s;
-  font-family: axiforma-thin;
-  font-size: small;
+  font-family: axiforma;
+  font-size: medium;
   margin: 20px 5px;
 }
 #btnproducto:hover {
