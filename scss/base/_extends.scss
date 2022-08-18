@@ -42,7 +42,7 @@
 
 %boton{
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 40px;
     color: $nnabis1;
     background-color: $nnabis3;
     border: solid 2px $nnabis3;
@@ -60,7 +60,7 @@
 }
 %boton3{
   text-align: center;
-  padding: 10px 0px;
+  padding: 10px 40px;
   color: $nnabis3;
   background-color: transparent;
   border: solid 2px $nnabis3;
@@ -86,7 +86,7 @@
     background-color: $nnabis1;
     border: 2px solid $nnabis2;
     width: 150px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     margin-top: 2rem;
     &:hover {
       color: $nnabis1;

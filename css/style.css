@@ -44,7 +44,7 @@
 
 .button2 a, .button2 input, .boton_comprar2 a {
   text-align: center;
-  padding: 10px 0px;
+  padding: 10px 40px;
   color: #21412E;
   background-color: #d4ddd8;
   border: solid 2px #d4ddd8;
@@ -62,7 +62,7 @@
 
 #btnproducto {
   text-align: center;
-  padding: 10px 0px;
+  padding: 10px 40px;
   color: #d4ddd8;
   background-color: transparent;
   border: solid 2px #d4ddd8;
@@ -87,7 +87,7 @@
   background-color: #21412E;
   border: 2px solid #FCB631;
   width: 150px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   margin-top: 2rem;
 }
 .boton__quienes a:hover, .boton_comprar a:hover {
@@ -241,6 +241,57 @@ header {
   --bs-gutter-x: 0px;
 }
 
+/* From uiverse.io by @alexmaracinaru */
+.cta {
+  border: none;
+  background: none;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 10px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 body {
   background-color: #21412E;
   font-family: axiforma;
@@ -260,7 +311,7 @@ body h2 {
   font-family: monument;
 }
 body h3 {
-  font-family: monument;
+  font-family: axiforma;
   font-size: medium;
   color: white;
 }
@@ -403,7 +454,7 @@ body p {
 
 .button2 a, .button2 input, .boton_comprar2 a {
   text-align: center;
-  padding: 10px 0px;
+  padding: 10px 40px;
   color: #21412E;
   background-color: #d4ddd8;
   border: solid 2px #d4ddd8;
@@ -421,7 +472,7 @@ body p {
 
 #btnproducto {
   text-align: center;
-  padding: 10px 0px;
+  padding: 10px 40px;
   color: #d4ddd8;
   background-color: transparent;
   border: solid 2px #d4ddd8;
@@ -446,7 +497,7 @@ body p {
   background-color: #21412E;
   border: 2px solid #FCB631;
   width: 150px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   margin-top: 2rem;
 }
 .boton__quienes a:hover, .boton_comprar a:hover {
@@ -543,7 +594,7 @@ footer ul {
 
 .button2 a, .button2 input, .boton_comprar2 a {
   text-align: center;
-  padding: 10px 0px;
+  padding: 10px 40px;
   color: #21412E;
   background-color: #d4ddd8;
   border: solid 2px #d4ddd8;
@@ -561,7 +612,7 @@ footer ul {
 
 #btnproducto {
   text-align: center;
-  padding: 10px 0px;
+  padding: 10px 40px;
   color: #d4ddd8;
   background-color: transparent;
   border: solid 2px #d4ddd8;
@@ -586,7 +637,7 @@ footer ul {
   background-color: #21412E;
   border: 2px solid #FCB631;
   width: 150px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   margin-top: 2rem;
 }
 .boton__quienes a:hover, .boton_comprar a:hover {
@@ -863,6 +914,10 @@ footer ul {
   text-align: center;
   align-items: flex-start;
   justify-content: flex-start;
+}
+
+.boton_comprar2 a {
+  padding: 10px 0px !important;
 }
 
 .espacio {
@@ -1674,7 +1729,7 @@ footer, footer div, .flex__pr, .contenedor__galeria {
 
 .boton_comprar2 a, .button2 a, .button2 input {
   text-align: center;
-  padding: 10px 0px;
+  padding: 10px 40px;
   color: #21412E;
   background-color: #d4ddd8;
   border: solid 2px #d4ddd8;
@@ -1692,7 +1747,7 @@ footer, footer div, .flex__pr, .contenedor__galeria {
 
 #btnproducto {
   text-align: center;
-  padding: 10px 0px;
+  padding: 10px 40px;
   color: #d4ddd8;
   background-color: transparent;
   border: solid 2px #d4ddd8;
@@ -1717,7 +1772,7 @@ footer, footer div, .flex__pr, .contenedor__galeria {
   background-color: #21412E;
   border: 2px solid #FCB631;
   width: 150px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   margin-top: 2rem;
 }
 .boton_comprar a:hover, .boton__quienes a:hover {
