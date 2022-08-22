@@ -241,55 +241,64 @@ header {
   --bs-gutter-x: 0px;
 }
 
-/* From uiverse.io by @alexmaracinaru */
-.cta {
-  border: none;
-  background: none;
+/* From uiverse.io by @satyamchaudharydev */
+button {
+  --primary-color: transparent;
+  --secondary-color: #fff;
+  --hover-color: transparent;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
 }
 
-.cta span {
-  padding-bottom: 7px;
-  letter-spacing: 4px;
-  font-size: 10px;
-  padding-right: 15px;
-  text-transform: uppercase;
+button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.cta svg {
-  transform: translateX(-8px);
-  transition: all 0.3s ease;
-}
-
-.cta:hover svg {
-  transform: translateX(0);
-}
-
-.cta:active svg {
-  transform: scale(0.9);
-}
-
-.hover-underline-animation {
+button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
   position: relative;
-  color: black;
-  padding-bottom: 20px;
+  transition: 0.2s;
 }
 
-.hover-underline-animation:after {
+button .arrow::before {
   content: "";
+  box-sizing: border-box;
   position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1.5px;
-  bottom: 0;
-  left: 0;
-  background-color: #000000;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
 }
 
-.cta:hover .hover-underline-animation:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+  right: 0;
 }
 
 body {
