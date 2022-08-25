@@ -79,13 +79,7 @@ header{
         justify-content: center;
  }
 
-.hero-text-boton {
-        @extend %textoheader;
-        top: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: $nnabis3;
-    }
+
 
 .button-index a{
         padding: 15px;
@@ -168,6 +162,9 @@ button {
     transition: 0.2s background;
     align-items: center;
     gap: 0.6em;
+    &:hover{
+        color: $nnabis2;
+    }
   }
   
   button .arrow-wrapper {
@@ -183,6 +180,7 @@ button {
     height: var(--arrow-stroke);
     position: relative;
     transition: 0.2s;
+
   }
   
   button .arrow::before {
@@ -197,6 +195,8 @@ button {
     transition: 0.2s;
     padding: 3px;
     transform: rotate(-45deg);
+    
+    
   }
   
   button:hover {
@@ -204,9 +204,12 @@ button {
   }
   
   button:hover .arrow {
-    background: var(--secondary-color);
+    background-color: $nnabis2;
+    
+
   }
   
   button:hover .arrow:before {
     right: 0;
+    border-color: $nnabis2;
   }

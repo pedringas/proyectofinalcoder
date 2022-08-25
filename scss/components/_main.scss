@@ -264,7 +264,7 @@
     background-position: center;
     background-repeat:no-repeat;
     background-size: cover;
-    min-height: 300px;
+    min-height: 500px;
     border-radius: 10px 10px 10px 10px;
   }
 
@@ -1042,4 +1042,14 @@ figure{
   &:hover{
     color: $nnabis3;
   }
+}
+
+
+#search{
+  display: flex;
+  justify-content: center;
+}
+input[type=text], select, textarea{
+  color: $nnabis1;
+  border: 1px solid $nnabis2;
 }
